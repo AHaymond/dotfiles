@@ -1,0 +1,18 @@
+[user]
+	name = Adam Haymond
+	email = ahaymond@middil.com
+[core]
+	excludesfile = /opt/boxen/config/git/gitignore
+	editor = subl -n -w
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+
+[github]
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
