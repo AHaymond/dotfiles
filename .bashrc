@@ -1,6 +1,9 @@
 # Check slave status on dbator
 alias checkdbator="ssh dbator 'mysql -u root -p -e \"SHOW SLAVE STATUS \G\"'"
 
+# Boxen setup
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
 # Change name of terminal window function
 function nn
 {
@@ -83,9 +86,6 @@ PS1="${YELLOW}\h${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch
 # Show branch in command prompt line
 # export PS1="[\W$(__git_ps1 " (%s)")]\$ "
 # export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
-
-# This loads RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 # Add MAMP mysql to PATH and PostgreSQL and RVM (for scripting)
 export PATH=$PATH:/Applications/MAMP/Library/bin:/Library/PostgreSQL/9.1/bin:$HOME/.rvm/bin
