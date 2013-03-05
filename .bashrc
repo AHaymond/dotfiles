@@ -1,3 +1,6 @@
+# Start Rails App with Unicorn server
+alias unicorn='./script/server'
+
 # Check slave status on dbator
 alias checkdbator="ssh dbator 'mysql -u root -p -e \"SHOW SLAVE STATUS \G\"'"
 
@@ -30,7 +33,7 @@ alias fn='find . -type f -print0 | xargs -0 grep -sl'
 alias rails328='go "ruby --version ; rails --version"'
 
 # Alias for switching to speakez_rails development
-alias speakez-rails='go "cd /Users/ode/Documents/mi/speakez-rails;"'
+alias speakez-rails='go "cd /Users/ode/src/speakez-rails;"'
 
 # RM require confirmation
 alias rm='rm -i'
@@ -88,7 +91,7 @@ PS1="${YELLOW}\h${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch
 # export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
 # Add MAMP mysql to PATH and PostgreSQL and RVM (for scripting)
-export PATH=$PATH:/Applications/MAMP/Library/bin:/Library/PostgreSQL/9.1/bin:$HOME/.rvm/bin
+#export PATH=$PATH:/Applications/MAMP/Library/bin:/Library/PostgreSQL/9.1/bin:$HOME/.rvm/bin
 
 # Create MySQL socket for MAMP to use with RoR
 alias crl="ln -s /Applications/MAMP/tmp/mysql/mysql.sock /tmp/mysql.sock"
