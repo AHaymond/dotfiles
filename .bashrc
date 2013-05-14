@@ -18,7 +18,7 @@ function nn
     fi
 }
 
-nn "DEFAULT"
+#nn "DEFAULT"
 
 # Load ANT
 export ANT_HOME=/usr/local/ant
@@ -93,12 +93,6 @@ PS1="${YELLOW}\h${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch
 # Add MAMP mysql to PATH and PostgreSQL and RVM (for scripting)
 #export PATH=$PATH:/Applications/MAMP/Library/bin:/Library/PostgreSQL/9.1/bin:$HOME/.rvm/bin
 
-# Create MySQL socket for MAMP to use with RoR
-alias crl="ln -s /Applications/MAMP/tmp/mysql/mysql.sock /tmp/mysql.sock"
-
-# Add root MySQL local to path
-#export PATH=$PATH:/usr/local/mysql/bin/
-
 # Set TextMate as the default text editor for BASH
 export EDITOR="vim"
 #export EDITOR="subl -w"
@@ -134,7 +128,6 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 #export FMM='/Library/Application Support/Macromedia/mm.cfg'
 
 #export FPHOME='/Library/Internet Plug-Ins/Flash Player.plugin'
-export SVN_MERGE='vim'
 
 #export PATH=/Applications/calibre.app/Contents/MacOS:~/bin:/opt/local/bin:/opt/local/sbin:$PATH:/Applications/OpenOffice.org.app/Contents/MacOS:/Applications/eclipse:/Applications/ImageMagick-6.6.7/bin:/Users/sfelt/d/sandbox/gae/appengine-java-sdk-1.4.3/bin:/Applications/MAMP/bin:/Applications/MAMP/Library/bin
 
@@ -233,7 +226,6 @@ alias so='source'
 
 #alias sp40='spacey 40'
 alias pre='open -a "Preview"'
-alias oo='open -a "OpenOffice.org.app"'
 #export ANT_HOME=/usr/share/java/ant-1.7.1/
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
 #export PATH=$PATH:/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/bin:/usr/share/java/ant-1.7.1/bin:/Users/sfelt/Documents/sandbox/nook/android-sdk-mac_x86/platform-tools
