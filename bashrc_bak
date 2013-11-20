@@ -1,9 +1,3 @@
-#AWS
-source ~/.dont_put_on_github
-
-# Overwrite pry with alias for speakez-rails
-alias pry='pry -r ./config/environment'
-
 # Start Rails App with Unicorn server
 alias unicorn='./script/server'
 
