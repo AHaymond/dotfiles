@@ -8,6 +8,20 @@
 	status = auto
 	branch = auto
 	diff = auto
+[alias]
+	st = status
+	ss = status -s
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+	fu = fetch upstream
+	fo = fetch origin
+	who = shortlog -s --
+	com = commit -m
+	pod = push origin develop
+	redevop = rebase upstream/develop
 
 [github]
 
@@ -16,3 +30,7 @@ protocol = https
 
 [credential]
 helper = /opt/boxen/bin/boxen-git-credential
+[push]
+	default = simple
+[heroku]
+remote = staging
