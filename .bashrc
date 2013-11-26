@@ -1,3 +1,5 @@
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
+
 #AWS
 source ~/.dont_put_on_github
 
