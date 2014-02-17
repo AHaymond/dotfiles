@@ -1,19 +1,6 @@
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
-
-#AWS
-source ~/.dont_put_on_github
 
 # Overwrite pry with alias for speakez-rails
 alias pry='pry -r ./config/environment'
-
-# Start Rails App with Unicorn server
-alias unicorn='./script/server'
-
-# Check slave status on dbator
-alias checkdbator="ssh dbator 'mysql -u root -p -e \"SHOW SLAVE STATUS \G\"'"
-
-# Boxen setup
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 # Change name of terminal window function
 function nn
@@ -27,21 +14,6 @@ function nn
 }
 
 #nn "DEFAULT"
-
-# Load ANT
-export ANT_HOME=/usr/local/ant
-export PATH=${PATH}:${ANT_HOME}/bin
-export NODE_PATH=/usr/local/lib/node_modules/
-
-
-# GREP command that will search the current directory and all subfolders
-alias fn='find . -type f -print0 | xargs -0 grep -sl'
-
-# RVM Gemset aliases
-alias rails328='go "ruby --version ; rails --version"'
-
-# Alias for switching to speakez_rails development
-alias speakez-rails='go "cd /Users/ode/src/speakez-rails;"'
 
 # RM require confirmation
 alias rm='rm -i'
@@ -107,14 +79,6 @@ export EDITOR="vim"
 
 export RUBYMINE_HOME="/Applications/RubyMine.app/"
 
-#######################
-# Go to speakez folder
-#######################
-alias speakez="cd ~/Documents/mi/speakez"
-
-# go to sites folder
-alias sites="cd ~/Sites"
-
 # show my IP address
 alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2"
 
@@ -124,63 +88,6 @@ export CLICOLOR='true'
 # see man ls
 # The default is "exfxcxdxbxegedabagacad", i.e. blue foreground and default background for regular directories, black foreground and red background for setuid executables, etc.
 export LSCOLORS="gxfxcxdxbxegedabagacad"
-
-# export FLASHSHAREDOBJECTS='/Users/sfelt/Library/Preferences/Macromedia/Flash Player/#SharedObjects/23RE2WP6/localdev.xlontech.com'
-#export FLASHSHAREDOBJECTS='/Users/sfelt/Library/Preferences/Macromedia/Flash Player/#SharedObjects/'
-#alias cdso='cd "$FLASHSHAREDOBJECTS"'
-
-# ant/ivy stuff:
-# export FLEX_HOME=$HOME/opt/flex_sdk
-
-#export TRACE='/Users/sfelt/Library/Preferences/Macromedia/Flash Player/Logs/flashlog.txt'
-#export FMM='/Library/Application Support/Macromedia/mm.cfg'
-
-#export FPHOME='/Library/Internet Plug-Ins/Flash Player.plugin'
-
-#export PATH=/Applications/calibre.app/Contents/MacOS:~/bin:/opt/local/bin:/opt/local/sbin:$PATH:/Applications/OpenOffice.org.app/Contents/MacOS:/Applications/eclipse:/Applications/ImageMagick-6.6.7/bin:/Users/sfelt/d/sandbox/gae/appengine-java-sdk-1.4.3/bin:/Applications/MAMP/bin:/Applications/MAMP/Library/bin
-
-#spacey ()
-#{
-#    SPACECOUNT=$1
-#
-#    OUTSPACE=""
-#    OUTLINE=""
-#
-#    while [ $SPACECOUNT -gt 0 ]
-#        do
-#            OUTSPACE="$OUTSPACE\n"
-#            OUTLINE="$OUTLINE-"
-#            SPACECOUNT=$((SPACECOUNT - 1))
-#        done
-#
-#    echo -e $OUTSPACE
-#    echo $OUTLINE
-#    echo -e $OUTSPACE
-#}
-
-#SHORTCUTS_PATH=~/Documents/shortcuts/cl
-
-#cm ()
-#{
-#    ln -s "`pwd`" $SHORTCUTS_PATH
-#}
-#
-#clist ()
-#{
-    ## ls -l $SHORTCUTS_PATH | cat -n
-#    ls -r -l $SHORTCUTS_PATH | cut -c 45- | \
-#    sed 's/\/Users\/sfelt\/d\/hm\/Jarvis\/branches/~~bran~/' | \
-#    sed 's/\/Users\/sfelt\/d\/hm\/Jarvis\/trunk/~~trun~/' | \
-#    sed 's/\/Users\/sfelt/~/' | \
-#    sed 's/-> \\*//' | \
-#    sed 's/ /__space__/g' | \
-#    sed 's/__space__/ /' | \
-#    awk 'NF!=0{print $0}' | awk '{ printf "%-20s %s\n", $1, $2}'  | \
-#    sed 's/__space__/ /g' | \
-#    cat -n
-
-    ## awk 'NF!=0{print $0}' | awk '{ printf "%70s\n", $0 }'  | cat -n
-#}
 
 ca ()
 {
@@ -205,14 +112,6 @@ ca ()
     fi
 }
 
-tarbak ()
-{
-    FILE=$1
-    TOTAR=`echo $FILE | sed -e "s#/\\$##" | sed -e "s#/#.#g"`
-    #if [ $@ -a -e $TOTAR ]
-    tar -czvf ~/TRASH/$TOTAR.`date +%Y%m%d_%H%M_%S`.tgz $FILE
-}
-
 ####################################
 ## File listing aliases
 ####################################
@@ -220,24 +119,10 @@ alias ll='ls -lahF'
 alias l='ls -l'
 alias ls='ls -G'
 
-# mysql (MAMP) shortcuts
-alias m='mysql -uroot -proot speakez'
-alias trace='tail -n100 -f "$TRACE"'
-alias ctrace='echo "" > "$TRACE";spacey 40;tail -f "$TRACE"'
-# alias vtrace='v "$TRACE"'
-
-# flex compiler
-# alias fc='mxmlc -compiler.library-path+="/Users/sfelt/Documents/Flex Builder 3/com.movenetworks.mms.utils/libs/corelib-0.9.swc" -compiler.source-path="/Users/sfelt/Documents/Flex Builder 3/com.movenetworks.mms.core/src,/Users/sfelt/Documents/Flex Builder 3/com.movenetworks.mms.modules.reporting/src,/Users/sfelt/Documents/Flex Builder 3/com.movenetworks.mms.modules.useradmin/src,/Users/sfelt/Documents/Flex Builder 3/com.movenetworks.mms.utils/src,/Users/sfelt/Documents/Flex Builder 3/flightaf/src,/Users/sfelt/Documents/Flex Builder 3/com.movenetworks.mms.portal/src,/Users/sfelt/Documents/Flex Builder 3/com.movenetworks.mms.thirdparty.flexlib/src" -output "/Users/sfelt/TRASH/fc.out.swf"'
-
-
 alias so='source'
 
 #alias sp40='spacey 40'
 alias pre='open -a "Preview"'
-#export ANT_HOME=/usr/share/java/ant-1.7.1/
-#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
-#export PATH=$PATH:/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/bin:/usr/share/java/ant-1.7.1/bin:/Users/sfelt/Documents/sandbox/nook/android-sdk-mac_x86/platform-tools
-
 alias ports='sudo lsof -i -P | grep LISTEN'
 
 

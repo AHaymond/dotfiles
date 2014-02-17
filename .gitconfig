@@ -23,14 +23,3 @@
 	pod = push origin develop
 	redevop = rebase upstream/develop
 
-[github]
-
-[hub]
-protocol = https
-
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
-[push]
-	default = simple
-[heroku]
-remote = staging
