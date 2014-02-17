@@ -89,29 +89,6 @@ export CLICOLOR='true'
 # The default is "exfxcxdxbxegedabagacad", i.e. blue foreground and default background for regular directories, black foreground and red background for setuid executables, etc.
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 
-ca ()
-{
-    if [ $@ ]
-    then
-        WHICH_DIR=$1
-    else
-        clist
-        read -p "____ " WHICH_DIR
-    fi
-
-    if [ $WHICH_DIR ]
-    then
-        if [ $WHICH_DIR != "q" ]
-        then
-            THE_DIR=`ls -r -1 $SHORTCUTS_PATH | head -n $((WHICH_DIR)) | tail -n 1`
-            KUDA=`readlink "$SHORTCUTS_PATH/$THE_DIR"`
-            echo -n "  >>>  "
-            echo $KUDA
-            cd "$KUDA"
-        fi
-    fi
-}
-
 ####################################
 ## File listing aliases
 ####################################
@@ -125,86 +102,6 @@ alias so='source'
 alias pre='open -a "Preview"'
 alias ports='sudo lsof -i -P | grep LISTEN'
 
-
-## git aliases
-alias gb='go "git branch"'
-alias gsb='go "git show-branch"'
-
-alias gs='go "git status -s"'
-
-alias gco='go "git checkout"'
-alias gci='go "git commit"'
-alias gpo='go "git push origin"'
-alias gpm='go "git push migrator"'
-alias gpl='go "git pull"'
-
-############################################
-## supporting functions
-############################################
-# param 1:  the command to run
-# param 2:  the pattern to match for finding files to work on
-findFilesApplyCommand ()
-{
-    # sanitize the submissions
-    if [ -n "$1" -a  -n "$2" ]; then
-        files=`find . -iname "*$2*"`
-
-        fileCount=`echo "$files" | wc -l`
-
-        # did we find any files?
-        if [ $fileCount -gt 0 ]; then
-            echo "-------------------------------------------"
-            echo "$1"
-
-            doForEachFile "echo '    '" "$files"
-
-            echo "-------------------------------------------"
-
-            doForEachFile "$1" "$files" 1
-        else
-            echo "No files found for   $2"
-        fi
-
-        # empty out the file list
-        files=""
-
-        # list all files' status
-        gs
-    else
-        echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        echo "    1: $1     2: $2"
-        echo "    Something's empty and it ought not to be so "
-        echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    fi
-}
-
-
-# param 1:  the command to run
-# param 2:  the files to work on
-# param 3:  time to sleep in the loop so we can see what's happening
-doForEachFile ()
-{
-    if [ -n "$3" ];
-    then
-        sleepSeconds=$3
-    else
-        sleepSeconds=0
-    fi
-
-    if [ -n "$1" -a -n "$2" ];
-    then
-        for line in $2
-        do
-            if [ -f "$line" ];
-            then
-                sleep $sleepSeconds
-                eval "$1 $line"
-            fi
-        done
-    fi
-}
-
-
 ## echo out the command before executing
 go ()
 {
@@ -217,27 +114,6 @@ echoB ()
 {
 	echo -e "\033[33m\033[44m $* \033[0m"
 }
-
-############################################
-## git remote functions
-############################################
-alias gf='go "git fetch"'
-alias gr='go "git remote"'
-alias gru='go "git remote show upstream"'
-alias gro='go "git remote show origin"'
-
-############################################
-## git reset shortcuts
-############################################
-alias grsoft='go "git reset"'
-alias grhard='go "git reset --hard"'
-
-############################################
-## git merge
-############################################
-alias gm='go "git merge"'
-alias gmupnext='go "git merge upstream/next"'
-alias gmupmaster='go "git merge upstream/master"'
 
 ############################################
 ## git rm
