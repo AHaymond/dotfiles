@@ -1,8 +1,8 @@
 [user]
 	name = Adam Haymond
-	email = ahaymond@middil.com
+	email = adam@masteryconnect.com
 [core]
-	excludesfile = /opt/boxen/config/git/gitignore
+	excludesfile = /Users/archer/.gitignore_global
 	editor = subl -n -w
 [color]
 	status = auto
@@ -23,3 +23,9 @@
 	pod = push origin develop
 	redevop = rebase upstream/develop
 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
