@@ -1,42 +1,15 @@
-# Overwrite pry with alias for speakez-rails
-alias pry='pry -r ./config/environment'
-
-# Change name of terminal window function
-function nn
-{
-    if [ "$1" == "DEFAULT" ]; then
-        export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
-    else
-        export TERMINAL_SUPER_TITLE="$1"
-        export PROMPT_COMMAND='echo -ne "\033]0; $TERMINAL_SUPER_TITLE\007"'
-    fi
+##
+# Git shell prompt
+##
+function parse_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
+function parse_git_dirty {
+  [[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] && echo "*"
 }
 
-#nn "DEFAULT"
-
-# RM require confirmation
-alias rm='rm -i'
-
-# Git tab completion
-source ~/git-completion.bash
-
-##### Copied from George Marshall ######
-
-##
-# Git bash completion scripts
-##
-# if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
-  # Git OS X Installer: http://code.google.com/p/git-osx-installer/
-  # . /usr/local/git/contrib/completion/git-completion.bash
-# elif type brew > /dev/null 2>&1 && [ -f `brew --prefix`/etc/bash_completion ]; then
-  # Homebrew: http://mxcl.github.com/homebrew/
-  # . `brew --prefix`/etc/bash_completion
-# elif [ -f /opt/local/etc/bash_completion.d/git ]; then
-  # MacPorts: http://www.macports.org/
-  # . /opt/local/etc/bash_completion.d/git
-# fi
-
-
+# Set brew bin to PATH so it is checked before /usr/bin
+export PATH=/usr/local/bin:$PATH
 
 ##
 # Shell colors
@@ -51,41 +24,18 @@ CYAN="\[\e[0;36m\]"   BOLD_CYAN="\[\e[1;36m\]"   UNDER_CYAN="\[\e[4;36m\]"
 WHITE="\[\e[0;37m\]"  BOLD_WHITE="\[\e[1;37m\]"  UNDER_WHITE="\[\e[4;37m\]"
 NO_COLOR="\[\e[0m\]"
 
-##
-# Git shell prompt
-##
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
-}
-function parse_git_dirty {
-  [[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] && echo "*"
-}
-
-PS1="${YELLOW}\h${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
-
-##### End copied from George Marshall ######
-
-# Show branch in command prompt line
-# export PS1="[\W$(__git_ps1 " (%s)")]\$ "
-# export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
-
-# Add MAMP mysql to PATH and PostgreSQL and RVM (for scripting)
-#export PATH=$PATH:/Applications/MAMP/Library/bin:/Library/PostgreSQL/9.1/bin:$HOME/.rvm/bin
-
-# Set TextMate as the default text editor for BASH
-export EDITOR="vim"
-#export EDITOR="subl -w"
-
-export RUBYMINE_HOME="/Applications/RubyMine.app/"
-
-# show my IP address
-alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2"
-
 # set some colors for the terminal
 export CLICOLOR='true'
 
+# Ask to delete single file
+alias rm='rm -i' 
+
+PS1="${YELLOW}\h${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
+
 # see man ls
-# The default is "exfxcxdxbxegedabagacad", i.e. blue foreground and default background for regular directories, black foreground and red background for setuid executables, etc.
+# The default is "exfxcxdxbxegedabagacad", i.e. blue foreground and default
+# background for regular directories, black foreground and red background
+# for setuid executables, etc.
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 
 ####################################
@@ -94,22 +44,16 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 alias ll='ls -lahF'
 alias l='ls -l'
 alias ls='ls -G'
+####################################
+## show my IP address
+####################################
+alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2 | tail -n1"
+alias myips="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2"
+alias myextip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-alias so='source'
+# Git tab completion
+source ~/git-completion.bash
 
-#alias sp40='spacey 40'
-alias pre='open -a "Preview"'
-alias ports='sudo lsof -i -P | grep LISTEN'
-
-## echo out the command before executing
-go ()
-{
-	echoB $*
-	eval "$*"
-}
-
-## echo out with coloring (mac)
-echoB ()
-{
-	echo -e "\033[33m\033[44m $* \033[0m"
-}
+# Show/hide hidden files
+alias show_hidden='defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder'
+alias hide_hidden='defaults delete com.apple.finder AppleShowAllFiles && killall Finder'
