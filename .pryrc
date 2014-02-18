@@ -32,7 +32,7 @@ end
 # $ gem install awesome_print
 begin
   # add awesome_print to LOAD_PATH just in case it is not reuquired in a Gemfile
-  $LOAD_PATH << %x(find $HOME/.rvm/gems/$RUBY_VERSION/gems -maxdepth 1 -type d -name 'awesome*' | tail -n1).gsub("\n",'') + '/lib'
+  #$LOAD_PATH << %x(find $HOME/.rvm/gems/$RUBY_VERSION/gems -maxdepth 1 -type d -name 'awesome*' | tail -n1).gsub("\n",'') + '/lib'
 	require 'awesome_print'
 	Pry.config.print = proc { |output, value| output.puts value.ai(indent: 2) }
 rescue LoadError => e

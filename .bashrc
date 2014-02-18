@@ -57,3 +57,5 @@ source ~/git-completion.bash
 # Show/hide hidden files
 alias show_hidden='defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder'
 alias hide_hidden='defaults delete com.apple.finder AppleShowAllFiles && killall Finder'
+
+export RUBY_VERSION='ruby -v'
