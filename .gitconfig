@@ -2,8 +2,8 @@
 	name = Adam Haymond
 	email = adam@masteryconnect.com
 [core]
-	excludesfile = /Users/archer/.gitignore_global
-	editor = subl -n -w
+	excludesfile = /Users/archer/.gitignore
+	editor = vim
 [color]
 	status = auto
 	branch = auto
@@ -20,8 +20,6 @@
 	fo = fetch origin
 	who = shortlog -s --
 	com = commit -m
-	pod = push origin develop
-	redevop = rebase upstream/develop
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -31,3 +29,5 @@
 	trustExitCode = true
 [push]
 	default = simple
+[mergetool]
+	keepBackup = true

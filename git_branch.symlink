@@ -1,0 +1,7 @@
+#!/usr/bin/ruby
+require 'net/telnet'
+SERVERS = ['djxmmx.net', 'ota.iambic.com', 'alpha.mike-r.com']
+server = SERVERS.sample
+puts "Using #{server}"
+response = Net::Telnet::new("Host" => server, "Port" => 17).waitfor("Timeout" => 10).gsub(/[.\-,'"?]/,'').gsub(/\\x92/,'').strip.downcase.split(' ')[0..4].join('_')
+system("git checkout -b #{response}")

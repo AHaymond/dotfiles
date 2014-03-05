@@ -1,12 +1,7 @@
-Pry.config.editor = 'subl -w'
-
-# This is just a hash to rename the prompt for the current Rails app
-app_name = { migrate: 'migrate', cmt2: 'mmt', srs2: 'mercury', connectcode: 'lead',
- cdb: 'cdb' }
+Pry.config.editor = 'vim'
 
 # Custom prompt
-# prompt = "ruby-#{RUBY_VERSION}-p#{RUBY_PATCHLEVEL}"
-prompt = defined?(Rails) ? app_name[Rails.application.class.parent_name.downcase.to_sym] : File.basename(Dir.pwd)
+prompt = defined?(Rails) ? Rails.application.class.parent_name : File.basename(Dir.pwd)
 Pry.config.prompt = [
   proc { |obj, nest_level, _| "#{prompt} (#{obj}):#{nest_level} > " },
   proc { |obj, nest_level, _| "#{prompt} (#{obj}):#{nest_level} *"}
@@ -48,18 +43,20 @@ rails = File.join Dir.getwd, 'config', 'environment.rb'
 if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   require rails
 
+  Pry.commands.alias_command '@', 'show-model'
+
   if Rails.version[0..0] == "2"
     require 'console_app'
     require 'console_with_helpers'
-  elsif Rails.version[0..0] == "3"
+  elsif Rails.version[0..0].match(/(3|4)/).present?
     require 'rails/console/app'
     require 'rails/console/helpers'
   else
-    warn "[WARN] cannot load Rails console commands (Not on Rails2 or Rails3?)"
+    warn "[WARN] cannot load Rails console commands (Rails Version > 2?)"
   end
 end
 
 Pry.config.hooks.add_hook(:when_started, :say_hi) { puts "\n\nWelcome to Pry!\n\n" }
-Pry.config.hooks.add_hook(:after_session, :say_bye) { puts "\nHave a nice day Adam! :)\n\n"}
+# Pry.config.hooks.add_hook(:after_session, :say_bye) { puts "\nHave a nice day! :)\n\n"}
 
 Pry.config.commands.import(default_command_set)

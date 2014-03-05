@@ -22,6 +22,8 @@ begin
     rescue LoadError => err
       warn "Couldn't load Wirble: #{err}"
   end
+rescue
+  warn 'Wirble not installed: gem install wirble'
 end
 
 ## so you can run pretty print
@@ -45,7 +47,7 @@ if defined? Rails.env
   IRB.conf[:PROMPT_MODE] = :RAILS_ENV
 end
 
-require "awesome_print"
+require "awesome_print" rescue warn('failed')
 def no_ap # Switch awesome_print off
   IRB::Irb.class_eval do
     def output_value
