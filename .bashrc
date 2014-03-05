@@ -58,4 +58,8 @@ source ~/git-completion.bash
 alias show_hidden='defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder'
 alias hide_hidden='defaults delete com.apple.finder AppleShowAllFiles && killall Finder'
 
+alias mc='cd ~/masteryconnect && vim'
+greps () {
+  grep -iRan $1 $2 | less -R
+}
 export RUBY_VERSION='ruby -v'

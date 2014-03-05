@@ -1,0 +1,18 @@
+#!/usr/bin/ruby
+require 'net/telnet'
+SERVERS = ['djxmmx.net', 'ota.iambic.com', 'alpha.mike-r.com']
+server = SERVERS.sample
+
+unless File.directory?('.git')
+  puts 'ERROR: Current directory is not a Git repository'
+  exit
+end
+
+puts 'This will create a new git branch with a random branch name from a QOTD server.'
+print 'Do you wish to continue? (y/n) '
+answer = gets.chomp
+if answer == 'y'
+  puts "Using #{server}"
+  response = Net::Telnet::new("Host" => server, "Port" => 17).waitfor("Timeout" => 10).gsub(/[.\-,'"?]/,'').gsub(/\\x92/,'').strip.downcase.split(' ')[0..4].join('_')
+  system("git checkout -b #{response}")
+end
