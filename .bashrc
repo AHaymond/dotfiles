@@ -41,9 +41,9 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 ####################################
 ## File listing aliases
 ####################################
+alias ls='ls -G --color=auto'
 alias ll='ls -lahF'
 alias l='ls -l'
-alias ls='ls -G'
 ####################################
 ## show my IP address
 ####################################
