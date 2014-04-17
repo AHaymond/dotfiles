@@ -1,5 +1,11 @@
 Pry.config.editor = 'vim'
 
+# Print out first 10 lines of an exception
+Pry.config.exception_handler = proc do |output, exception, _pry_|
+  output.puts "#{exception}"
+  exception.backtrace.first(10).each { |e| output.puts e } 
+end
+
 # Custom prompt
 prompt = defined?(Rails) ? Rails.application.class.parent_name : File.basename(Dir.pwd)
 Pry.config.prompt = [
@@ -51,6 +57,7 @@ if File.exist?(rails) && ENV['SKIP_RAILS'].nil?
   elsif Rails.version[0..0].match(/(3|4)/).present?
     require 'rails/console/app'
     require 'rails/console/helpers'
+    extend Rails::ConsoleMethods
   else
     warn "[WARN] cannot load Rails console commands (Rails Version > 2?)"
   end

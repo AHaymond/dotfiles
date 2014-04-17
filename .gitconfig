@@ -1,33 +1,37 @@
 [user]
-	name = Adam Haymond
-	email = adam@masteryconnect.com
+  name = Adam Haymond
+  email = adam@masteryconnect.com
 [core]
-	excludesfile = /Users/archer/.gitignore
-	editor = vim
+  excludesfile = /Users/archer/.gitignore
+  editor = vim
 [color]
-	status = auto
-	branch = auto
-	diff = auto
+  status = auto
+  branch = auto
+  diff = auto
 [alias]
-	st = status
-	ss = status -s
-	ci = commit
-	br = branch
-	co = checkout
-	df = diff
-	lg = log -p
-	fu = fetch upstream
-	fo = fetch origin
-	who = shortlog -s --
-	com = commit -m
+  st = status
+  ss = status -s
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  fu = fetch upstream
+  fo = fetch origin
+  who = shortlog -s --
+  com = commit -am
+  g = grep --break --heading --line-number
 
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [push]
-	default = simple
+  default = simple
 [mergetool]
-	keepBackup = true
+  keepBackup = true
+[grep]
+  extendRegexp = true
+  lineNumber = true
