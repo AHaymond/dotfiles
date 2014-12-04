@@ -3,7 +3,7 @@ Pry.config.editor = 'vim'
 # Print out first 10 lines of an exception
 Pry.config.exception_handler = proc do |output, exception, _pry_|
   output.puts "#{exception}"
-  exception.backtrace.first(10).each { |e| output.puts e } 
+  exception.backtrace.first(10).each { |e| output.puts e }
 end
 
 # Custom prompt
@@ -67,3 +67,7 @@ Pry.config.hooks.add_hook(:when_started, :say_hi) { puts "\n\nWelcome to Pry!\n\
 # Pry.config.hooks.add_hook(:after_session, :say_bye) { puts "\nHave a nice day! :)\n\n"}
 
 Pry.config.commands.import(default_command_set)
+
+Pry.commands.block_command(/!(\d+)/, "Replay a line of history", :listing => "!hist") do |line|
+  run "history --replay #{line}"
+end

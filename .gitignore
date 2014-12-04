@@ -23,3 +23,7 @@ doc/
 .idea/
 
 disable_ssl.yml
+
+public/mt
+
+notes/

@@ -1,3 +1,5 @@
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 ##
 # Git shell prompt
 ##
@@ -9,7 +11,7 @@ function parse_git_dirty {
 }
 
 # Set brew bin to PATH so it is checked before /usr/bin
-export PATH=/usr/local/bin:$PATH
+# export PATH=/usr/local/bin:$PATH
 
 ##
 # Shell colors
@@ -28,7 +30,7 @@ NO_COLOR="\[\e[0m\]"
 export CLICOLOR='true'
 
 # Ask to delete single file
-alias rm='rm -i' 
+alias rm='rm -iv'
 
 PS1="${YELLOW}\h${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
 
@@ -41,7 +43,7 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 ####################################
 ## File listing aliases
 ####################################
-alias ls='ls -G --color=auto'
+alias ls='ls -G'
 alias ll='ls -lahF'
 alias l='ls -l'
 ####################################
@@ -67,4 +69,54 @@ greps () {
   grep -iRan $1 $2 | less -R
 }
 
+include () {
+  [[ -f "$1" ]] && source "$1"
+}
+
 export RUBY_VERSION='ruby -v'
+
+export EDITOR=/usr/bin/vim
+
+#   Set default blocksize for ls, df, du
+#   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
+#   ------------------------------------------------------------
+    export BLOCKSIZE=1k
+
+#   -----------------------------
+#   2.  MAKE TERMINAL BETTER
+#   -----------------------------
+
+alias cp='cp -iv'                           # Preferred 'cp' implementation
+alias rm='rm -iv'                           # Preferred 'rm' implementation
+alias mv='mv -iv'                           # Preferred 'mv' implementation
+alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
+alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
+alias less='less -FSRXc'                    # Preferred 'less' implementation
+# cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
+alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
+alias ..='cd ../'                           # Go back 1 directory level
+alias ...='cd ../../'                       # Go back 2 directory levels
+alias .3='cd ../../../'                     # Go back 3 directory levels
+alias .4='cd ../../../../'                  # Go back 4 directory levels
+alias .5='cd ../../../../../'               # Go back 5 directory levels
+alias .6='cd ../../../../../../'            # Go back 6 directory levels
+alias edit='subl'                           # edit:         Opens any file in sublime editor
+alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
+alias ~="cd ~"                              # ~:            Go Home
+alias c='clear'                             # c:            Clear terminal display
+alias which='type -all'                     # which:        Find executables
+alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
+alias show_options='shopt'                  # Show_options: display bash options settings
+alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
+alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
+mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
+trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
+ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
+alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
+vim_date () { cd ~/masteryconnect/notes && vim $( date '+%Y-%m-%d' ).markdown; }
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Include custom files
+include $HOME/.api_tokens

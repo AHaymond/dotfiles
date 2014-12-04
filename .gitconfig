@@ -21,10 +21,13 @@
   who = shortlog -s --
   com = commit -am
   g = grep --break --heading --line-number
+  changed = log --name-status
+  fud = fetch upstream develop
+  rud = rebase upstream/develop
 
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
+  path =
 [mergetool "sourcetree"]
   cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
@@ -35,3 +38,5 @@
 [grep]
   extendRegexp = true
   lineNumber = true
+[branch]
+  autosetuprebase = always
