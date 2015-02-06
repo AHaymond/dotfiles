@@ -27,3 +27,5 @@ disable_ssl.yml
 public/mt
 
 notes/
+.hubot_history
+aws_creds
