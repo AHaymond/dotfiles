@@ -118,5 +118,7 @@ vim_date () { cd ~/masteryconnect/notes && vim $( date '+%Y-%m-%d' ).markdown; }
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+include $HOME/.aws_creds
+
 ### Include custom files
 include $HOME/.api_tokens

@@ -6,6 +6,9 @@ fi
 
 export GREP_OPTIONS='--color=always'
 
+alias grep="/usr/bin/grep $GREP_OPTIONS"
+unset GREP_OPTIONS
+
 ####################################
 ## functions
 ####################################
@@ -37,6 +40,10 @@ search_javascript () {
 
 search_rails () {
   open dash://rails:$1
+}
+
+include() {
+  [[ -f "$1" ]] && source "$1"
 }
 
 # OPATH=$PATH

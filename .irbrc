@@ -1,7 +1,7 @@
 ## .irbrc
 
 require "rubygems"
-
+require 'irb/completion'
 ## tab-tab completion, colorizing
 begin
 
@@ -31,6 +31,11 @@ end
 
 ## auto indent
 IRB.conf[:AUTO_INDENT]=true
+
+## history
+IRB.conf[:EVAL_HISTORY] = 1000
+IRB.conf[:SAVE_HISTORY] = 1000
+IRB.conf[:HISTORY_FILE] = File::expand_path("~/.irbhistory")
 
 ## Set prompt to default instead of RVM
 #IRB.conf[:PROMPT_MODE] = :DEFAULT
