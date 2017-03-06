@@ -30,3 +30,5 @@ public/mt
 notes/
 .hubot_history
 aws_creds
+.vendor/
+.envrc

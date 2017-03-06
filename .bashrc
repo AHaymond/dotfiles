@@ -1,5 +1,13 @@
+# if not running interactively, don't do anything
+[[ $- != *i* ]] && return
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+##
+# Set timezone
+##
+TZ='America/Denver'; export TZ
+
 ##
 # Git shell prompt
 ##
@@ -32,7 +40,7 @@ export CLICOLOR='true'
 # Ask to delete single file
 alias rm='rm -iv'
 
-PS1="${YELLOW}\h${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
+PS1="${YELLOW}Dipper${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
 
 # see man ls
 # The default is "exfxcxdxbxegedabagacad", i.e. blue foreground and default
@@ -43,24 +51,22 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 ####################################
 ## File listing aliases
 ####################################
-alias ls='ls -G'
+alias ls='ls -G --color=always'
 alias ll='ls -lahF'
 alias l='ls -l'
 ####################################
 ## show my IP address
 ####################################
-alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2 | tail -n1"
-alias myips="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2"
-alias myextip="dig +short myip.opendns.com @resolver1.opendns.com"
+#alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2 | tail -n1"
+#alias myips="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2"
+#alias myextip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Git tab completion
 source ~/git-completion.bash
 
 # Show/hide hidden files
-alias show_hidden='defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder'
-alias hide_hidden='defaults delete com.apple.finder AppleShowAllFiles && killall Finder'
-
-alias mc='cd ~/masteryconnect && vim'
+#alias show_hidden='defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder'
+#alias hide_hidden='defaults delete com.apple.finder AppleShowAllFiles && killall Finder'
 
 ####################################
 ## functions
@@ -90,9 +96,8 @@ alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias rm='rm -iv'                           # Preferred 'rm' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
-# cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
+#cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
@@ -100,25 +105,34 @@ alias .3='cd ../../../'                     # Go back 3 directory levels
 alias .4='cd ../../../../'                  # Go back 4 directory levels
 alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
-alias edit='subl'                           # edit:         Opens any file in sublime editor
-alias f='open -a Finder ./'                 # f:            Opens current directory in MacOS Finder
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
 alias which='type -all'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
-alias show_options='shopt'                  # Show_options: display bash options settings
-alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
-alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
-mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
-trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
-ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
-alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
-vim_date () { cd ~/masteryconnect/notes && vim $( date '+%Y-%m-%d' ).markdown; }
+alias now='date -u && date'
+function shrtn() {
+  bitly -u $1 | awk -F' ' '{print $8}'
+}
+#alias show_options='shopt'                  # Show_options: display bash options settings
+#alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
+#alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
+#mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
+#trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
+#ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
+#alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+#include $HOME/.aws_creds
 
-include $HOME/.aws_creds
+ALIASDIR=~/aliases/*
+REPLY=$(type di 2>&1)
+if [[ ! $REPLY =~ "di is aliased to" ]]; then
+  for f in $ALIASDIR
+  do
+    source $f
+  done
+fi
 
-### Include custom files
-include $HOME/.api_tokens
+eval "$(direnv hook bash)"
+#[[ -s "/home/dean/Github/gvm/scripts/gvm" ]] && source "/home/dean/Github/gvm/scripts/gvm"
+
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"

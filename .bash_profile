@@ -1,7 +1,12 @@
-if [ -f /etc/profile ]; then
-  PATH=""
-  source /etc/profile
-fi
+#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+#if [ -f /etc/profile ]; then
+#  PATH=""
+#  source /etc/profile
+#fi
 #export PATH=/usr/local/bin:$PATH
 
 export GREP_OPTIONS='--color=always'
@@ -16,31 +21,19 @@ greps () {
   grep -iRan $1 $2 | less -R
 }
 
-work() {
-  cd ~/masteryconnect
-  loc=`pwd`
-  name=${loc##*/}
-
-  if ! tmux has-session -t "$name"; then
-    tmux new-session -d -s "$name"
-    tmux send-keys 'vim' C-m
-    tmux split-window -v -c "$loc"
-    tmux send-prefix t
-  fi
-  tmux attach -t "$name"
-}
-
-search_ruby () {
-  open dash://ruby:$1
-}
-
-search_javascript () {
-  open dash://javascript:$1
-}
-
-search_rails () {
-  open dash://rails:$1
-}
+#work() {
+#  cd ~/masteryconnect
+#  loc=`pwd`
+#  name=${loc##*/}
+#
+#  if ! tmux has-session -t "$name"; then
+#    tmux new-session -d -s "$name"
+#    tmux send-keys 'vim' C-m
+#    tmux split-window -v -c "$loc"
+#    tmux send-prefix t
+#  fi
+#  tmux attach -t "$name"
+#}
 
 include() {
   [[ -f "$1" ]] && source "$1"
