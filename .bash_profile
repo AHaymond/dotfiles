@@ -62,3 +62,9 @@ include() {
 # done
 # IFS=$OIFS
 # echo $RET_VAL
+
+if [[ "`uname -a`" = "Linux" ]]; then
+  if [[ -z "$DISPLAY" ]] && [[ -n "$XDF_VTNR" ]] && [[ $"XDG_VTNR" -eq 1 ]]; then
+    startx
+  fi
+fi

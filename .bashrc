@@ -1,6 +1,8 @@
 # if not running interactively, don't do anything
 [[ $- != *i* ]] && return
 export PATH="$HOME/.rbenv/bin:$PATH"
+export GOPATH=$HOME/Projects/golang
+export PATH="$GOPATH/bin:$PATH"
 eval "$(rbenv init -)"
 
 ##
@@ -17,9 +19,6 @@ function parse_git_branch {
 function parse_git_dirty {
   [[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] && echo "*"
 }
-
-# Set brew bin to PATH so it is checked before /usr/bin
-# export PATH=/usr/local/bin:$PATH
 
 ##
 # Shell colors
@@ -40,7 +39,7 @@ export CLICOLOR='true'
 # Ask to delete single file
 alias rm='rm -iv'
 
-PS1="${YELLOW}Dipper${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
+PS1="${YELLOW}\u${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
 
 # see man ls
 # The default is "exfxcxdxbxegedabagacad", i.e. blue foreground and default
@@ -51,7 +50,7 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 ####################################
 ## File listing aliases
 ####################################
-alias ls='ls -G --color=always'
+alias ls='ls  --color=always'
 alias ll='ls -lahF'
 alias l='ls -l'
 ####################################
@@ -62,7 +61,7 @@ alias l='ls -l'
 #alias myextip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Git tab completion
-source ~/git-completion.bash
+. ~/git-completion.bash
 
 # Show/hide hidden files
 #alias show_hidden='defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finder'
@@ -121,8 +120,6 @@ function shrtn() {
 #ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
 #alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
 
-#include $HOME/.aws_creds
-
 ALIASDIR=~/aliases/*
 REPLY=$(type di 2>&1)
 if [[ ! $REPLY =~ "di is aliased to" ]]; then
@@ -135,4 +132,3 @@ fi
 eval "$(direnv hook bash)"
 #[[ -s "/home/dean/Github/gvm/scripts/gvm" ]] && source "/home/dean/Github/gvm/scripts/gvm"
 
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
