@@ -1,0 +1,1 @@
+/home/soos/.config/systemd/user/update_wants.sh

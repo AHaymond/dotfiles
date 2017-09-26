@@ -1,0 +1,10 @@
+[Unit]
+Description=Increase Key Repeat
+After=xorg.target
+Requires=xorg.target
+
+[Service]
+ExecStart=/usr/bin/xset r rate 250 35
+
+[Install]
+WantedBy=xorg.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=An information bar for i3
+After=xorg.target
+Requires=xorg.target
+
+[Service]
+Type=forking
+ExecStart=/home/soos/.config/polybar/launch.sh
+
+[Install]
+WantedBy=xorg.target

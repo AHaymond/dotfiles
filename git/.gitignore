@@ -1,0 +1,35 @@
+.DS_Store
+.gitconfig
+Thumbs.db
+.project
+$*
+debug.txt
+
+# Ignore bundler config
+.bundle/
+
+# Ignore the default SQLite database
+db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+log/*.log
+tmp/
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+
+# Ignore Rubymine project files
+.idea/
+
+disable_ssl.yml
+
+public/mt
+
+notes/
+.hubot_history
+aws_creds
+.vendor/
+.envrc
+.envrc
