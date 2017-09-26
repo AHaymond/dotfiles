@@ -1,0 +1,46 @@
+[user]
+  name = Adam Haymond
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+  autocrlf = false
+[color]
+  status = auto
+  branch = auto
+  diff = auto
+[alias]
+  st = status
+  ss = status -s
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  fu = fetch upstream
+  fo = fetch origin
+  who = shortlog -s -n
+  com = commit -am
+  g = grep --break --heading --line-number
+  changed = log --name-status
+  fud = fetch upstream develop
+  rud = rebase upstream/develop
+
+[push]
+  default = simple
+[mergetool]
+  keepBackup = true
+[grep]
+  extendRegexp = true
+  lineNumber = true
+[branch]
+  autosetuprebase = always
+[merge]
+  tool = opendiff
+[rerere]
+  enabled = true
+[github]
+  user = AHaymond
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+[url "git@bitbucket.org:"]
+  insteadOf = https://bitbucket.org/
