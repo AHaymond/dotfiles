@@ -68,3 +68,7 @@ if [[ "`uname -a`" = "Linux" ]]; then
     startx
   fi
 fi
+
+check_net() {
+  ping -c 3 google.com
+}

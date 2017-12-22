@@ -1,6 +1,6 @@
 [Unit]
 Description=Increase Key Repeat
-After=xorg.target
+After=xorg.target i3.service
 Requires=xorg.target
 
 [Service]

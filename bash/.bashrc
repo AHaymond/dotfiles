@@ -81,6 +81,10 @@ include () {
   [[ -f "$1" ]] && source "$1"
 }
 
+checknetwk () {
+  ping -c 3 $1
+}
+
 export RUBY_VERSION='ruby -v'
 
 export EDITOR=/usr/bin/vim
@@ -132,6 +136,6 @@ if [[ ! $REPLY =~ "di is aliased to" ]]; then
   done
 fi
 
-#eval "$(direnv hook bash)"
+eval "$(direnv hook bash)"
 #[[ -s "/home/dean/Github/gvm/scripts/gvm" ]] && source "/home/dean/Github/gvm/scripts/gvm"
 

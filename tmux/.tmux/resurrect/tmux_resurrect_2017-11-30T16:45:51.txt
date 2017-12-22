@@ -1,0 +1,12 @@
+pane	0	1	:vim	0	:	1	:/home/soos/Projects/devops/mc_packer/ansible	1	vim	:vim
+pane	0	2	:bash	0	:	1	:/home/soos/Projects/devops/mc_packer/terraform/prizmdoc_dev	1	vim	:vim
+pane	0	3	:bash	0	:-	1	:/home/soos/Projects/devops/mc_packer/packer	1	bash	:
+pane	0	4	:ssh	1	:*Z	1	:/home/soos/Projects/devops/mc_packer/terraform/prizmdoc_dev	1	ssh	:ssh ubuntu@172.21.11.245
+pane	0	4	:ssh	1	:*Z	2	:/home/soos/Projects/devops/prizmdoc	0	bash	:
+pane	0	5	:bash	0	:	1	:/home/soos/Projects/devops/mc_packer/packer	1	bash	:
+window	0	1	0	:	cffe,316x58,0,0,1
+window	0	2	0	:	cfff,316x58,0,0,2
+window	0	3	0	:-	d000,316x58,0,0,3
+window	0	4	1	:*Z	3afe,316x58,0,0[316x31,0,0,4,316x26,0,32,5]
+window	0	5	0	:	d004,316x58,0,0,7
+state	0	

@@ -1,5 +1,6 @@
 [user]
   name = Adam Haymond
+  email = coastgrd@gmail.com
 [core]
   excludesfile = ~/.gitignore
   editor = vim
