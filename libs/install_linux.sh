@@ -8,10 +8,10 @@ Installing configs for Linux ...
 EOF
 
 # Desktop
-#install_bash && echo "✓ bash"
 stow bash && echo "✓ bash"
 stow dunst && echo "✓ dunst"
 stow polybar && echo "✓ polybar"
+stow i3 && echo "✓ i3"
 stow user_systemd && echo "✓ user_systemd"
 stow wallpaper && echo "✓ wallpaper"
 sudo stow bin && echo "✓ bin"
