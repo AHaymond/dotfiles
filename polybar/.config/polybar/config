@@ -221,34 +221,17 @@ headphone-soundcard = default
 ; Default: Master
 master-mixer = Master
 
-format-volume = <ramp-volume>  <label-volume>
-;label-volume = 
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
-format-muted = <ramp-volume>  <label-muted>
+format-muted = <ramp-volume> <label-muted>
 label-muted = %percentage%%
 format-muted-foreground = #D64937
 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = 
-bar-volume-indicator-font = 4
-bar-volume-fill = ─
-bar-volume-fill-font = 4
-bar-volume-empty = ─
-bar-volume-empty-font = 4
-bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
