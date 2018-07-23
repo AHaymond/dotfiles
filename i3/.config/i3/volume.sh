@@ -7,12 +7,12 @@ if [[ $# -eq 1 ]]; then
     "up")
       #amixer set Master $step+ unmute;;
       #sh -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +${step}%"
-      sh -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-mute 0 false ; pulseaudio-ctl up"
+      sh -c "pactl set-sink-mute @DEFAULT_SINK@ 0 ; pactl set-sink-mute 0 false ; pulseaudio-ctl up"
       ;;
     "down")
       #amixer set Master $step- unmute;;
       #sh -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -${step}%"
-      sh -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-mute 0 false ; pulseaudio-ctl down"
+      sh -c "pactl set-sink-mute @DEFAULT_SINK@ 0 ; pactl set-sink-mute 0 false ; pulseaudio-ctl down"
       ;;
     "toggle")
 #      amixer set Master toggle

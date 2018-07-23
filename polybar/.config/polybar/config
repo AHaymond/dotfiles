@@ -184,7 +184,7 @@ format-disconnected =
 
 [module/eth]
 type = internal/network
-interface = eth0
+interface = enp0s20f0u2u1u3
 interval = 3.0
 
 format-connected-prefix = " "

@@ -85,6 +85,21 @@ checknetwk () {
   ping -c 3 $1
 }
 
+mans () {    # Bash
+  local pages string
+  if [[ -n $2 ]]
+  then
+      pages=(${@:2})
+      string="$1"
+  else
+      pages=$1
+  fi
+  # GNU man
+  man ${2:+--pager="less -p \"$string\" -G"} ${pages[@]}
+  # BSD man
+  # man ${2:+-P "less -p \"$string\" -G"} ${pages[@]}
+}
+
 export RUBY_VERSION='ruby -v'
 
 export EDITOR=/usr/bin/vim
@@ -100,7 +115,7 @@ export EDITOR=/usr/bin/vim
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias rm='rm -iv'                           # Preferred 'rm' implementation
-alias mv='mv -iv'                           # Preferred 'mv' implementation
+alias mv='mv -i'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 #cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
@@ -116,6 +131,7 @@ alias c='clear'                             # c:            Clear terminal displ
 #alias which='type -all'                     # which:        Find executables
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
 alias now='date -u && date'
+alias keyboard='systemctl --user start keyboard'
 function shrtn() {
   bitly -u $1 | awk -F' ' '{print $8}'
 }
@@ -144,3 +160,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+PATH="/home/soos/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/soos/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/soos/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/soos/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/soos/perl5"; export PERL_MM_OPT;
