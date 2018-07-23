@@ -20,7 +20,7 @@
   fu = fetch upstream
   fo = fetch origin
   who = shortlog -s -n
-  com = commit -am
+  com = !git add -A && git commit -m
   g = grep --break --heading --line-number
   changed = log --name-status
   fud = fetch upstream develop

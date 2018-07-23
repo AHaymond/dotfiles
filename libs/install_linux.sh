@@ -22,6 +22,7 @@ sudo mv /.xinitrc $HOME/
 stow vim && echo "✓ vim"
 stow tmux && echo "✓ tmux"
 stow git && echo "✓ git"
+stow terraform && echo "✓ terraform"
 
 cat <<EOF
 Done.
