@@ -72,3 +72,6 @@ fi
 check_net() {
   ping -c 3 google.com
 }
+
+# Added by Krypton
+export GPG_TTY=$(tty)
