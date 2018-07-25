@@ -42,7 +42,7 @@ export CLICOLOR='true'
 # Ask to delete single file
 alias rm='rm -iv'
 
-PS1="${YELLOW}\H${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
+PS1="${YELLOW}\h${WHITE} [${GREEN}\W${WHITE}]${WHITE}[${CYAN}\$(parse_git_branch)${RED}\$(parse_git_dirty)${WHITE}]\$${NO_COLOR} "
 
 # see man ls
 # The default is "exfxcxdxbxegedabagacad", i.e. blue foreground and default
