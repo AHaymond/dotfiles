@@ -100,6 +100,15 @@ mans () {    # Bash
   # man ${2:+-P "less -p \"$string\" -G"} ${pages[@]}
 }
 
+printLine ()
+{
+    sed -n -e "$1p" "$2"
+}
+
+printLineToFileLine () {
+  printLine $1 $2 | sed -i "$3r /dev/stdin" $4
+}
+
 export RUBY_VERSION='ruby -v'
 
 export EDITOR=/usr/bin/vim
@@ -132,6 +141,8 @@ alias c='clear'                             # c:            Clear terminal displ
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
 alias now='date -u && date'
 alias keyboard='systemctl --user start keyboard'
+alias unicreds='assume_profile prod unicreds -r us-east-1'
+alias gotf='cd ~/Projects/devops/mc_packer/terraform'
 function shrtn() {
   bitly -u $1 | awk -F' ' '{print $8}'
 }
