@@ -3,7 +3,7 @@ export TERM=xterm-256color
 [[ $- != *i* ]] && return
 export GOPATH=$HOME/Projects/golang
 export PATH="$HOME/.rbenv/bin:$HOME/.local/bin:$GOPATH/bin:$PATH"
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 complete -cf sudo
 complete -cf man
@@ -170,6 +170,14 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+fi
+
+# Start ssh-agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+  ssh-agent > ~/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+  eval "$(<~/.ssh-agent-thing)"
 fi
 
 PATH="/home/soos/perl5/bin${PATH:+:${PATH}}"; export PATH;

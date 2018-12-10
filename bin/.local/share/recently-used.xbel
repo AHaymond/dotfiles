@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/soos/Downloads/ELLA_REE_TAYLOR_LOT_SPLIT.pdf" added="2018-10-22T21:10:49Z" modified="2018-11-09T17:16:12Z" visited="2018-10-22T21:10:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-08T21:31:45Z" count="2"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:16:12Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/06elec-Model.pdf" added="2018-11-07T23:29:14Z" modified="2018-11-09T17:16:12Z" visited="2018-11-07T23:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-07T23:29:14Z" count="1"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:16:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/05frame-Model.pdf" added="2018-11-07T23:29:14Z" modified="2018-11-09T17:16:12Z" visited="2018-11-07T23:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-08T21:10:22Z" count="2"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:16:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/04sides-Model.pdf" added="2018-11-07T23:29:14Z" modified="2018-11-09T17:16:12Z" visited="2018-11-07T23:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-08T21:10:22Z" count="2"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:16:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/03front-Model.pdf" added="2018-11-07T23:29:14Z" modified="2018-11-09T17:16:12Z" visited="2018-11-07T23:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-08T21:10:22Z" count="2"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:16:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/00site-Model.pdf" added="2018-11-07T23:29:14Z" modified="2018-11-09T17:16:12Z" visited="2018-11-07T23:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-08T21:31:45Z" count="3"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:16:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/01fnd-Model.pdf" added="2018-11-07T23:29:14Z" modified="2018-11-09T17:16:12Z" visited="2018-11-07T23:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-08T21:31:45Z" count="3"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:16:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/02main-Model.pdf" added="2018-11-07T23:29:14Z" modified="2018-11-09T17:16:12Z" visited="2018-11-07T23:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-08T21:10:22Z" count="2"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:16:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Goldenwest_FCU_-_Loan_Document_Request.pdf" added="2018-11-09T17:05:27Z" modified="2018-11-09T17:06:48Z" visited="2018-11-09T17:05:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T17:06:48Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Shed%20Plans/20x20%20Shed%20Plans%20_%20MyOutdoorPlans%20_%20Free%20Woodworking%20Plans%20and%20Projects,%20DIY%20Shed,%20Wooden%20Playhouse,%20Pergola,%20Bbq.html" added="2018-11-09T18:13:17Z" modified="2018-11-09T18:13:17Z" visited="2018-11-09T18:13:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T18:13:17Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Shed%20Plans/page2/shed2.html" added="2018-11-09T18:17:44Z" modified="2018-11-09T18:17:44Z" visited="2018-11-09T18:17:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T18:17:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Shed%20Plans/Shed_plans_1.pdf" added="2018-11-09T19:48:16Z" modified="2018-11-09T20:07:17Z" visited="2018-11-09T19:48:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T20:07:17Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Shed%20Plans/Shed_plans_2.pdf" added="2018-11-09T20:05:47Z" modified="2018-11-09T20:05:47Z" visited="2018-11-09T20:05:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T20:05:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Shed%20Plans/page%203/shed3.html" added="2018-11-09T20:06:33Z" modified="2018-11-09T20:06:33Z" visited="2018-11-09T20:06:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T20:06:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Shed%20Plans/Shed_plans_3.pdf" added="2018-11-09T20:29:47Z" modified="2018-11-09T20:29:47Z" visited="2018-11-09T20:29:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-09T20:29:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/tf_ami_builder.pem" added="2018-11-13T18:48:21Z" modified="2018-11-13T18:48:21Z" visited="2018-11-13T18:48:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-x509-ca-cert"/>
+        <bookmark:applications>
+          <bookmark:application name="Keybase" exec="&apos;Keybase %u&apos;" modified="2018-11-13T18:48:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(84%20of%2084).jpg" added="2018-11-13T19:04:36Z" modified="2018-11-13T19:04:36Z" visited="2018-11-13T19:04:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-13T19:04:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/utilities_contacts.csv" added="2018-11-13T21:08:06Z" modified="2018-11-13T21:08:06Z" visited="2018-11-13T21:08:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-13T21:08:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/files/C2Y366P3MD1%20-%20Range%20-%207099%20-%20v3.pdf" added="2018-11-16T19:10:55Z" modified="2018-11-16T19:10:55Z" visited="2018-11-16T19:10:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2018-11-16T19:10:55Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/sample_cost_breakdown.xls" added="2018-11-19T21:52:13Z" modified="2018-11-19T21:52:13Z" visited="2018-11-19T21:52:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.ms-excel"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-19T21:52:13Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/mailFilters.xml" added="2018-11-21T17:44:29Z" modified="2018-11-21T17:44:29Z" visited="2018-11-21T17:44:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/xml"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-21T17:44:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Mendon_Site_Plan.pdf" added="2018-11-26T20:52:43Z" modified="2018-11-26T20:52:43Z" visited="2018-11-26T20:52:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-26T20:52:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/UDOT_Right_of_Way_map.pdf" added="2018-11-26T20:54:08Z" modified="2018-11-26T20:54:08Z" visited="2018-11-26T20:54:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-26T20:54:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Dominion%20Energy%2065%20N%20100%20W%20%20Mendon.pdf" added="2018-11-26T20:54:57Z" modified="2018-11-26T20:54:57Z" visited="2018-11-26T20:54:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-26T20:54:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/RockyMountainPower.pdf" added="2018-11-26T20:55:37Z" modified="2018-11-26T20:55:37Z" visited="2018-11-26T20:55:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-26T20:55:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Mendon/comcast_right_of_way_utilities.pdf" added="2018-11-28T19:03:29Z" modified="2018-11-28T19:03:47Z" visited="2018-11-28T19:03:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="rambox" exec="&apos;rambox %u&apos;" modified="2018-11-28T19:03:29Z" count="1"/>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-11-28T19:03:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/.ssh/id_rsa" added="2018-12-03T22:53:23Z" modified="2018-12-03T22:53:23Z" visited="2018-12-03T22:53:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="teamsql" exec="&apos;teamsql %u&apos;" modified="2018-12-03T22:53:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/websizephotos%20(1)/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(84%20of%2084).jpg" added="2018-12-04T18:02:58Z" modified="2018-12-04T18:02:58Z" visited="2018-12-04T18:02:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:02:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(42%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(84%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(41%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(39%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(83%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(40%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(82%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(80%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(35%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(79%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(36%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(38%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(78%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(34%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(33%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(81%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(37%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(74%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(75%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(76%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(77%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(32%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(73%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(31%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(72%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(30%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(71%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(29%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(70%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(28%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(69%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(27%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(68%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(26%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(67%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(25%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(24%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(66%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(65%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(23%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(21%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(64%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(22%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(63%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(20%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(19%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(60%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(62%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(59%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(61%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(18%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(17%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(58%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(16%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(57%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(15%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(56%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(14%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(13%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(55%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(12%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(54%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(11%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(53%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(52%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(10%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(51%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(9%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(8%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(50%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(49%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(7%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(6%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(48%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(47%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(5%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(46%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(4%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(3%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(45%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(2%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(43%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(1%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/11-1-2018/BM%20Haymond_%20Jennifer%2011-1-2018%20(44%20of%2084).jpg" added="2018-12-04T18:23:26Z" modified="2018-12-04T18:23:26Z" visited="2018-12-04T18:23:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-04T18:23:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/Haymond%20Signature%20Card%20for%20Savings.pdf" added="2018-12-05T16:43:37Z" modified="2018-12-05T16:43:37Z" visited="2018-12-05T16:43:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-05T16:43:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/soos/Downloads/GWCU_account_20181205112855.pdf" added="2018-12-05T18:32:31Z" modified="2018-12-05T19:40:58Z" visited="2018-12-05T18:32:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2018-12-05T19:40:58Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
