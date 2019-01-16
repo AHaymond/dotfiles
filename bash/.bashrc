@@ -154,7 +154,7 @@ function shrtn() {
 #ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
 #alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
 
-ALIASDIR=~/aliases/*
+ALIASDIR=~/.bash/aliases/*
 REPLY=$(type di 2>&1)
 if [[ ! $REPLY =~ "di is aliased to" ]]; then
   for f in $ALIASDIR
