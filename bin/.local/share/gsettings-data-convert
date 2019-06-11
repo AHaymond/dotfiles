@@ -1,0 +1,3 @@
+[State]
+timestamp=1540925095
+converted=pulseaudio.convert;nm-applet.convert;gsettings-desktop-schemas.convert;gvfs-dns-sd.convert;org.gnome.crypto.pgp.convert;gnome-settings-daemon.convert;org.gnome.crypto.pgp_keyservers.convert;wm-schemas.convert;

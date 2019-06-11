@@ -2,7 +2,7 @@
 export TERM=xterm-256color
 [[ $- != *i* ]] && return
 export GOPATH=$HOME/Projects/golang
-#export PATH="$HOME/.rbenv/bin:$HOME/.local/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
 #eval "$(rbenv init -)"
 
 complete -cf sudo
@@ -157,7 +157,7 @@ function shrtn() {
 #ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
 #alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
 
-ALIASDIR=~/aliases/*
+ALIASDIR=~/.bash/aliases/*
 REPLY=$(type di 2>&1)
 if [[ ! $REPLY =~ "di is aliased to" ]]; then
   for f in $ALIASDIR
@@ -173,6 +173,14 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+fi
+
+# Start ssh-agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+  ssh-agent > ~/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+  eval "$(<~/.ssh-agent-thing)"
 fi
 
 PATH="/home/soos/perl5/bin${PATH:+:${PATH}}"; export PATH;
