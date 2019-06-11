@@ -1,9 +1,11 @@
+# for pulling down and autonaming videos from BYUtv
+# youtube-dl --write-sub -f "(mp4)[height=720]" --autonumber-start 1 -cio 'S03E%(autonumber)s.%(ext)s' -a videos.txt
+
 # if not running interactively, don't do anything
 export TERM=xterm-256color
 [[ $- != *i* ]] && return
 export GOPATH=$HOME/Projects/golang
-export PATH="$HOME/.rbenv/bin:$HOME/.local/bin:$GOPATH/bin:$PATH"
-#eval "$(rbenv init -)"
+export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
 
 complete -cf sudo
 complete -cf man

@@ -16,7 +16,6 @@ stow user_systemd && echo "✓ user_systemd"
 stow wallpaper && echo "✓ wallpaper"
 sudo stow bin && echo "✓ bin"
 sudo stow -t / x11 && echo "✓ x11"
-sudo mv /.xinitrc $HOME/
 
 # Dev
 stow vim && echo "✓ vim"
