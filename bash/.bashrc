@@ -144,7 +144,10 @@ alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable 
 alias now='date -u && date'
 alias keyboard='systemctl --user start keyboard'
 alias unicreds='assume_profile prod unicreds -r us-east-1'
-alias gotf='cd ~/Projects/devops/mc_packer/terraform'
+alias projects='cd ~/Projects'
+alias gotf='projects && cd devops/mc_packer/terraform'
+alias devops='projects && cd devops'
+
 function shrtn() {
   bitly -u $1 | awk -F' ' '{print $8}'
 }
