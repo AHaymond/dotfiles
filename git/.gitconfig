@@ -26,6 +26,10 @@
   fud = fetch upstream develop
   rud = rebase upstream/develop
 
+[credential]
+  helper = !aws --profile prod codecommit credential-helper $@
+  UseHttpPath = true
+
 [push]
   default = simple
 [mergetool]
