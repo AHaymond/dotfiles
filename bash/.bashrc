@@ -4,7 +4,11 @@
 # if not running interactively, don't do anything
 export TERM=xterm-256color
 [[ $- != *i* ]] && return
-export GOPATH=$HOME/Projects/golang
+if [ $(uname -n) = "dipper" ]; then
+  export GOPATH=$HOME/Projects/golang
+else
+  export GOPATH=$HOME/go
+fi
 export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
 
 complete -cf sudo
