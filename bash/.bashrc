@@ -6,7 +6,7 @@ export TERM=xterm-256color
 [[ $- != *i* ]] && return
 if [ $(uname -n) = "dipper" ]; then
   export GOPATH=$HOME/Projects/golang
-else
+elif [ $(uname -n) = "devbox" ]; then
   export GOPATH=$HOME/go
 fi
 export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
