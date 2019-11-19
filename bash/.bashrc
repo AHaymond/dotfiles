@@ -1,9 +1,15 @@
+# for pulling down and autonaming videos from BYUtv
+# youtube-dl --write-sub -f "(mp4)[height=720]" --autonumber-start 1 -cio 'S03E%(autonumber)s.%(ext)s' -a videos.txt
+
 # if not running interactively, don't do anything
 export TERM=xterm-256color
 [[ $- != *i* ]] && return
-export GOPATH=$HOME/Projects/golang
-export PATH="$HOME/.rbenv/bin:$HOME/.local/bin:$GOPATH/bin:$PATH"
-#eval "$(rbenv init -)"
+if [ $(uname -n) = "dipper" ]; then
+  export GOPATH=$HOME/Projects/golang
+elif [ $(uname -n) = "devbox" ]; then
+  export GOPATH=$HOME/go
+fi
+export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
 
 complete -cf sudo
 complete -cf man
@@ -142,7 +148,10 @@ alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable 
 alias now='date -u && date'
 alias keyboard='systemctl --user start keyboard'
 alias unicreds='assume_profile prod unicreds -r us-east-1'
-alias gotf='cd ~/Projects/devops/mc_packer/terraform'
+alias projects='cd ~/Projects'
+alias gotf='projects && cd devops/mc_packer/terraform'
+alias devops='projects && cd devops'
+
 function shrtn() {
   bitly -u $1 | awk -F' ' '{print $8}'
 }
@@ -180,8 +189,8 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
   eval "$(<~/.ssh-agent-thing)"
 fi
 
-PATH="/home/soos/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/soos/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/soos/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/soos/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/soos/perl5"; export PERL_MM_OPT;
+#PATH="/home/soos/perl5/bin${PATH:+:${PATH}}"; export PATH;
+#PERL5LIB="/home/soos/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+#PERL_LOCAL_LIB_ROOT="/home/soos/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+#PERL_MB_OPT="--install_base \"/home/soos/perl5\""; export PERL_MB_OPT;
+#PERL_MM_OPT="INSTALL_BASE=/home/soos/perl5"; export PERL_MM_OPT;

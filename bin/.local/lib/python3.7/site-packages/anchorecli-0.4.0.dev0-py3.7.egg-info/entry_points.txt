@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    anchore-cli=anchorecli.cli:main_entry
+    
