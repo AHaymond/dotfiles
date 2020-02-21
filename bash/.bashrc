@@ -11,6 +11,8 @@ if [ $(uname -n) = "dipper" ]; then
 elif [ $(uname -n) = "devbox" ]; then
   export GOPATH=$HOME/go
 fi
+
+export GOBIN=$GOPATH/bin
 export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
 
 export PYENV_ROOT="$HOME/.pyenv"
@@ -185,12 +187,19 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # Start ssh-agent
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-  ssh-agent > ~/.ssh-agent-thing
+if ! [[ $(uname -n) = "dipper" ]]; then
+  echo "loading ssh-agent"
+  if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh-agent-thing
+  fi
+  if [[ "$SSH_AGENT_PID" == "" ]]; then
+    eval "$(<~/.ssh-agent-thing)"
+  fi
+else
+  eval "$(ssh-agent)"
 fi
-if [[ "$SSH_AGENT_PID" == "" ]]; then
-  eval "$(<~/.ssh-agent-thing)"
-fi
+
+eval "$(rbenv init -)"
 
 #PATH="/home/soos/perl5/bin${PATH:+:${PATH}}"; export PATH;
 #PERL5LIB="/home/soos/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;

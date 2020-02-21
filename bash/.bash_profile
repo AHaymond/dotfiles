@@ -3,6 +3,7 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
 #if [ -f /etc/profile ]; then
 #  PATH=""
 #  source /etc/profile
@@ -35,9 +36,9 @@ greps () {
 #  tmux attach -t "$name"
 #}
 
-include() {
-  [[ -f "$1" ]] && source "$1"
-}
+#include() {
+#  [[ -f "$1" ]] && source "$1"
+#}
 
 # OPATH=$PATH
 
@@ -69,9 +70,9 @@ if [[ "`uname -a`" = "Linux" ]]; then
   fi
 fi
 
-check_net() {
-  ping -c 3 google.com
-}
+#check_net() {
+#  ping -c 3 google.com
+#}
 
 # Added by Krypton
-export GPG_TTY=$(tty)
+#export GPG_TTY=$(tty)
