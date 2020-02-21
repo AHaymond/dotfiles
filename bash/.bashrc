@@ -11,6 +11,9 @@ elif [ $(uname -n) = "devbox" ]; then
 fi
 export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 complete -cf sudo
 complete -cf man
 
@@ -175,8 +178,6 @@ fi
 eval "$(direnv hook bash)"
 #[[ -s "/home/dean/Github/gvm/scripts/gvm" ]] && source "/home/dean/Github/gvm/scripts/gvm"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
