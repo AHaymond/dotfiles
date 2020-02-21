@@ -1,9 +1,11 @@
 # for pulling down and autonaming videos from BYUtv
+# This is just a note for myself
 # youtube-dl --write-sub -f "(mp4)[height=720]" --autonumber-start 1 -cio 'S03E%(autonumber)s.%(ext)s' -a videos.txt
 
 # if not running interactively, don't do anything
-export TERM=xterm-256color
 [[ $- != *i* ]] && return
+
+export TERM=xterm-256color
 if [ $(uname -n) = "dipper" ]; then
   export GOPATH=$HOME/Projects/golang
 else
@@ -194,3 +196,9 @@ fi
 #PERL_LOCAL_LIB_ROOT="/home/soos/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 #PERL_MB_OPT="--install_base \"/home/soos/perl5\""; export PERL_MB_OPT;
 #PERL_MM_OPT="INSTALL_BASE=/home/soos/perl5"; export PERL_MM_OPT;
+
+# For Instructure garbage
+PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
+include $HOME/.credstash
+
+PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"

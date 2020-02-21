@@ -9,10 +9,10 @@
 #fi
 #export PATH=/usr/local/bin:$PATH
 
-export GREP_OPTIONS='--color=always'
+#export GREP_OPTIONS='--color=always'
 
-alias grep="/usr/bin/grep $GREP_OPTIONS"
-unset GREP_OPTIONS
+#alias grep="/usr/bin/grep $GREP_OPTIONS"
+#unset GREP_OPTIONS
 
 ####################################
 ## functions
