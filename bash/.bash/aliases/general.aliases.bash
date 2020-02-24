@@ -82,3 +82,23 @@ alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.ar
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
   alias "$method"="lwp-request -m '$method'"
 done
+
+alias cp='cp -iv'               # Preferred 'cp' implementation
+alias rm='rm -iv'               # Preferred 'rm' implementation
+alias mv='mv -i'                # Preferred 'mv' implementation
+alias mkdir='mkdir -pv'         # Preferred 'mkdir' implementation
+alias less='less -FSRXc'        # Preferred 'less' implementation
+alias .3='cd ../../..'          # Go back 3 directory levels
+alias .4='cd ../../../..'       # Go back 4 directory levels
+alias .5='cd ../../../../..'    # Go back 5 directory levels
+alias .6='cd ../../../../../..' # Go back 6 directory levels
+alias ~="cd ~"                  # ~: Go Home
+
+alias path='echo -e ${PATH}//:/\\n}'  # Print out PATH with newlines after each path
+alias now='date -u && date'
+alias keyboard='systemctl --user start keyboard'
+alias unicreds='assume_profile prod unicreds -r us-east-1'
+alias projects='cd ~/Projects'
+alias gotf='projects && cd devops/mc_packer/terraform'
+alias devops='projects && cd devops'
+
