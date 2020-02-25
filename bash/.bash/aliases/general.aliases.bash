@@ -1,5 +1,6 @@
 # List directory contents
 alias sl=ls
+alias lsn="ls --color=never"
 alias ls='ls -G'        # Compact view, show colors
 alias la='ls -AF'       # Compact view, show hidden
 alias ll='ls -al'
