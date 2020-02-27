@@ -31,7 +31,7 @@ function prompt_command() {
 
   # with time in prompt
   # PS1="$(ssh_show_host)$(vaulted_prompt)${green}[\T]${reset_color} [ ${cyan}\w${reset_color}$(scm_prompt_info)${reset_color} ] ${cyan}\$ ${reset_color}"
-  PS1="$(ssh_show_host)$(vaulted_prompt)[${cyan}\w${reset_color}$(scm_prompt_info)${reset_color}] ${cyan}\$ ${reset_color}"
+  PS1="$(ssh_show_host)$(vaulted_prompt)[${cyan}\W${reset_color}$(scm_prompt_info)${reset_color}] ${cyan}\$ ${reset_color}"
 }
 
 function vaulted_prompt {
