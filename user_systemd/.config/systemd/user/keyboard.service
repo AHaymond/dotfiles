@@ -1,10 +1,13 @@
 [Unit]
-Description=Increase Key Repeat
-After=xorg.target i3.service
-Requires=xorg.target
+Description=Keyboard repeate rate in tty.
 
 [Service]
-ExecStart=/usr/bin/xset r rate 250 35
+Type=oneshot
+RemainAfterExit=yes
+StandardInput=tty
+StandardOutput=tty
+#ExecStart=/usr/bin/xset r rate 250 35
+ExecStart=/usr/bin/kbdrate -s --rate=60 --delay=300
 
 [Install]
-WantedBy=xorg.target
+WantedBy=multi-user.target
