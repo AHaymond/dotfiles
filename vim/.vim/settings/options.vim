@@ -69,5 +69,13 @@ set vb t_vb= " Turn off the bell, this could be more annoying, but I'm not sure 
 set list
 set listchars=tab:>.,trail:.,nbsp:.
 autocmd filetype html,xml set listchars-=tab:>.
+
+" -------------------------------
+" https://vim.fandom.com/wiki/Remove_unwanted_spaces#:~:text=One%20way%20to%20make%20sure,all%20trailing%20whitespace%20before%20saving.
+" One way to make sure to remove all trailing whitespace in a file is to set
+" an autocmd in your .vimrc file. Every time the user issues a :w command, Vim
+" will automatically remove all trailing whitespace before saving.
+autocmd BufWritePre * %s/\s\+$//e
+" -------------------------------
 set foldmethod=indent       " automatically fold by indent level
 set foldlevelstart=9999
