@@ -8,7 +8,7 @@ alias l='ls -a'
 alias l1='ls -1'
 alias ldu='du -cks * | sort -rn | head -15' # Lists the size of all the folders
 
-alias grep="grep --color=auto"
+alias grep="grep --color=auto --exclude-dir=terraform* --exclude-dir=.terraform* --exclude-dir=.git"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
