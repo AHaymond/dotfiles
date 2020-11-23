@@ -10,8 +10,6 @@ EOF
 # Desktop
 #install_bash && echo "✓ bash"
 stow bash && echo "✓ bash"
-stow ranger && echo "✓ ranger"
-stow urxvt && echo "✓ urxvt"
 
 # Dev
 stow ruby && echo "✓ ruby"
