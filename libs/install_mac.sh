@@ -12,7 +12,6 @@ EOF
 stow bash && echo "✓ bash"
 
 # Dev
-stow ruby && echo "✓ ruby"
 stow vim && echo "✓ vim"
 stow tmux && echo "✓ tmux"
 stow git && echo "✓ git"
