@@ -100,6 +100,5 @@ alias now='date -u && date'
 alias keyboard='systemctl --user start keyboard'
 alias unicreds='assume_profile prod unicreds -r us-east-1'
 alias projects='cd ~/Projects'
-alias gotf='projects && cd devops/mc_packer/terraform'
 alias devops='projects && cd devops'
 
