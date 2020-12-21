@@ -16,6 +16,7 @@ stow vim && echo "✓ vim"
 stow tmux && echo "✓ tmux"
 stow git && echo "✓ git"
 stow brew && echo "✓ brew"
+stow ruby_essentials && echo "✓ ruby essentials"
 
 cat <<EOF
 Done.
