@@ -95,10 +95,10 @@ alias .5='cd ../../../../..'    # Go back 5 directory levels
 alias .6='cd ../../../../../..' # Go back 6 directory levels
 alias ~="cd ~"                  # ~: Go Home
 
-alias path='echo -e ${PATH}//:/\\n}'  # Print out PATH with newlines after each path
+alias path='echo -e ${PATH//:/\\n}'  # Print out PATH with newlines after each path
 alias now='date -u && date'
 alias keyboard='systemctl --user start keyboard'
 alias unicreds='assume_profile prod unicreds -r us-east-1'
 alias projects='cd ~/Projects'
-alias devops='projects && cd devops'
+alias raynor='projects && cd raynor'
 
