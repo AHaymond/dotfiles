@@ -85,6 +85,9 @@ nnoremap <leader>l :TagbarToggle<CR>
 " NerdTree key binding
 nnoremap <leader>n :NERDTreeToggle<CR>
 
+" Shellcheck key binding
+nnoremap <leader>s :SyntasticCheck shellcheck<CR>
+
 " ctrl+p Key Bindings
 nmap <C-b> :CtrlPBuffer<CR>
 nnoremap <C-l> :CtrlPFunky<CR>

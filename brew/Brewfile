@@ -3,6 +3,7 @@
 ###############################################################################
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
+cask_args appdir: "~/Applications", require_sha: true
 tap 'homebrew/cask-fonts'
 tap 'homebrew/core'
 tap 'homebrew/command-not-found'
@@ -12,12 +13,23 @@ tap 'hashicorp/tap'
 ###############################################################################
 # basics
 ###############################################################################
+brew 'bash'
 brew 'vim'
 brew 'tmux'
 brew 'git'
 brew 'svn' # required for installin cask-fonts
 brew 'mas' # Mac App Store Manager
 brew 'mosh'
+
+###############################################################################
+# Utilities needed for Virtualbox Mac OS install
+# https://github.com/myspaghetti/macos-virtualbox
+###############################################################################
+brew 'coreutils'
+brew 'dmg2img'
+brew 'gzip'
+brew 'unzip'
+brew 'wget'
 
 ###############################################################################
 # dotfiles support
@@ -80,11 +92,15 @@ brew 'inetutils'
 brew 'jq'
 brew 'trash'
 brew 'vaulted'
+brew 'shellcheck'
 
 ###############################################################################
 # fonts
 ###############################################################################
 cask 'font-roboto-mono-for-powerline'
+cask 'font-droid-sans-mono-for-powerline'
+cask 'font-source-code-pro-for-powerline'
+cask 'font-ubuntu-mono-derivative-powerline'
 
 ###############################################################################
 # apps
@@ -96,6 +112,7 @@ cask 'tableplus'
 cask 'slack'
 cask 'keybase'
 cask 'unite'
+cask 'virtualbox'
 #cask 'zoom'
 
 mas 'Amphetamine', id: 937984704
@@ -116,12 +133,12 @@ cask 'qlmarkdown'
 cask 'tunnelblick'
 
 # Raynor config
+brew 'direnv'
 brew 'libmaxminddb'
 brew 'geoipupdate'
 brew 'postgresql'
 brew 'v8@3.15'
-brew 'mysql'
-brew 'mysql@5.6'
+brew 'mysql@5.6', link: true
 brew 'mcrypt'
 brew 'pbzip2'
 brew 'wget'
