@@ -1,0 +1,7 @@
+rvm_path="/Users/adam/.rvm"
+rvm_pretty_print_flag=1
+rvm_install_on_use_flag=1
+rvm_trust_rvmrcs_flag=1
+rvm_auto_reload_flag=1
+rvm_project_rvmrc_default=1
+rvm_path="$HOME/.rvm"
