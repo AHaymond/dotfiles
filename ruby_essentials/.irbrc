@@ -53,26 +53,27 @@ if defined? Rails.env
 end
 
 require "awesome_print" rescue warn('failed')
+AwesomePrint.irb!
 def no_ap # Switch awesome_print off
-  IRB::Irb.class_eval do
-    def output_value
-      printf @context.return_format, @context.inspect_last_value
-    end
-  end
+  #IRB::Irb.class_eval do
+  #  def output_value
+  #    printf @context.return_format, @context.inspect_last_value
+  #  end
+  #end
 
-  set_wirble_color
-  puts 'awesome_print: OFF'.red
-  puts 'wirble colors: ON'.green
+  #set_wirble_color
+  #puts 'awesome_print: OFF'.red
+  #puts 'wirble colors: ON'.green
 end
 
 def yes_ap # Switch awesome_print on
-  IRB::Irb.class_eval do
-    def output_value
-      ap @context.last_value, raw: true
-    end
-  end
-  puts 'awesome_print: ON'.green
-  puts 'wirble colors: OFF'
+  #IRB::Irb.class_eval do
+  #  def output_value
+  #    ap @context.last_value, raw: true
+  #  end
+  #end
+  #puts 'awesome_print: ON'.green
+  #puts 'wirble colors: OFF'
 end
 
 def flush
@@ -100,4 +101,12 @@ else
       object.ai
     end
   end.new
+end
+
+begin
+    require "pry"
+      Pry.start
+        exit
+rescue LoadError => e
+    warn "=> Unable to load pry"
 end

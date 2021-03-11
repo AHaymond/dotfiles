@@ -20,6 +20,7 @@ brew 'git'
 brew 'svn' # required for installin cask-fonts
 brew 'mas' # Mac App Store Manager
 brew 'mosh'
+brew 'watch'
 
 ###############################################################################
 # Utilities needed for Virtualbox Mac OS install
@@ -93,6 +94,7 @@ brew 'jq'
 brew 'trash'
 brew 'vaulted'
 brew 'shellcheck'
+brew 'act'
 
 ###############################################################################
 # fonts
@@ -113,6 +115,7 @@ cask 'slack'
 cask 'keybase'
 cask 'unite'
 cask 'virtualbox'
+cask 'iterm2'
 #cask 'zoom'
 
 mas 'Amphetamine', id: 937984704
@@ -131,6 +134,9 @@ cask 'qlmarkdown'
 # tap tools
 ###############################################################################
 cask 'tunnelblick'
+
+# taptools config
+brew 'libsodium' # this is needed for the jwt (JSON Web Token) gem to run rspec tests
 
 # Raynor config
 brew 'direnv'
