@@ -2,6 +2,7 @@
 
 . ./libs/install_checks.sh
 . ./libs/install_functions.sh
+DOTFILES_FOLDER="$(basename $(dirname "$(readlink -fm "$0")"))"
 
 cat <<EOF
 Installing configs for Linux ...
@@ -21,6 +22,8 @@ sudo stow -t / x11 && echo "✓ x11"
 stow vim && echo "✓ vim"
 stow tmux && echo "✓ tmux"
 stow git && echo "✓ git"
+ln -sf $DOTFILES_FOLDER/git/.gitignore $HOME/
+stow ruby_essentials && echo "✓ ruby essentials"
 stow terraform && echo "✓ terraform"
 
 cat <<EOF
