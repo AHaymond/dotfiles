@@ -27,7 +27,6 @@ public/mt
 notes/
 .hubot_history
 aws_creds
-.vendor/
 .envrc
 
 # Compiled source #
@@ -67,3 +66,6 @@ aws_creds
 .Trashes
 ehthumbs.db
 Thumbs.db
+tags
+
+!vendor/*.com

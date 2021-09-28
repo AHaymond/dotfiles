@@ -10,6 +10,8 @@ alias ldu='du -cks * | sort -rn | head -15' # Lists the size of all the folders
 
 alias grep="grep --color=auto --exclude-dir=terraform* --exclude-dir=.terraform* --exclude-dir=.git"
 
+alias gen_ctags="ctags --recurse=yes --exclude=.git --exclude=BUILD --exclude=.svn --exclude=vendor/* --exclude=node_modules/* --exclude=db/* --exclude=log/*"
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
@@ -100,5 +102,8 @@ alias now='date -u && date'
 alias keyboard='systemctl --user start keyboard'
 alias unicreds='assume_profile prod unicreds -r us-east-1'
 alias projects='cd ~/Projects'
-alias raynor='projects && cd raynor'
+alias tapresearch='projects && cd tapresearch'
+alias raynor='projects && tapresearch && cd raynor'
+alias go-kamino='projects && tapresearch && cd kamino'
+alias teachermade='projects && cd teachermade'
 

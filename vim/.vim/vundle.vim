@@ -112,6 +112,7 @@ Plugin 'vim-ruby/vim-ruby'
   let ruby_operators=1
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-scripts/ruby-matchit'
+Plugin 'vim-scripts/taglist.vim'
 
 " CSS
 Plugin 'hail2u/vim-css3-syntax'
