@@ -27,6 +27,29 @@ alias dps="$DOCKERCMD ps"
 # Get container IP
 alias dip="$DOCKERCMD inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
+# I don't know what this does right now
+handle_empty(){
+  while read line; do
+    if test -z "$line"; then
+        echo 'There was an empty line, exiting.' # > /dev/stderr
+        exit 0;
+    fi
+    echo "$line"
+  done;
+}
+
+# clean up volumes
+dvolumes() { docker volume ls -qf dangling=true | handle_empty | xargs docker volume rm | cat; }
+
+# clean up networks
+dnetworks() {
+  docker network ls --format "{{json . }}" | jq -r '.Name' | while read name; do
+    if test "$name" == "interos-test"*; then
+      docker network rm "$name" | cat
+    fi
+  done
+}
+
 # Stop all containers
 dstop() { $DOCKERCMD stop $($DOCKERCMD ps -a -q); }
 
