@@ -51,3 +51,5 @@
   insteadOf = https://bitbucket.org/
 [init]
 	defaultBranch = master
+[pull]
+	rebase = true
