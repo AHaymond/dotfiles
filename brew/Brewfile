@@ -21,6 +21,7 @@ brew 'svn' # required for installin cask-fonts
 brew 'mas' # Mac App Store Manager
 brew 'mosh'
 brew 'watch'
+brew 'youtube-dl'
 
 ###############################################################################
 # Utilities needed for Virtualbox Mac OS install
@@ -40,7 +41,7 @@ brew 'stow'
 ###############################################################################
 # hashicorp support
 ###############################################################################
-%w[vault consul nomad terraform].each do |tool|
+%w[vault consul nomad ].each do |tool|
   brew "hashicorp/tap/#{tool}", link: true
 end
 brew 'tfswitch'
@@ -103,6 +104,7 @@ cask 'font-roboto-mono-for-powerline'
 cask 'font-droid-sans-mono-for-powerline'
 cask 'font-source-code-pro-for-powerline'
 cask 'font-ubuntu-mono-derivative-powerline'
+cask 'font-meslo-for-powerline'
 
 ###############################################################################
 # apps
@@ -127,7 +129,6 @@ mas 'WhatsApp Desktop', id: 1147396723
 ###############################################################################
 cask 'quicklook-json'
 cask 'quicklook-csv'
-cask 'qlmarkdown'
 #cask 'qlcolorcode' possible buggy or malicious
 
 ###############################################################################
