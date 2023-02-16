@@ -6,7 +6,7 @@ set noswapfile    " It's 2012, Vim.
 if exists("+undofile")
   " This is only present in 7.3+
   if isdirectory($HOME . '/.local/share/nvim/undo') == 0
-    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
+    :silent !mkdir -p ~/.local/share/nvim/undo > /dev/null 2>&1
   endif
   set undodir=~/.local/share/nvim/undo " undo files
   set undofile
