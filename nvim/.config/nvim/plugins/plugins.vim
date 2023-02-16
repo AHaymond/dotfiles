@@ -10,7 +10,7 @@ endif
 call plug#begin('~/.local/share/nvim/site/plugged')
 
 let g:plug_url_format = 'git@github.com:%s.git'
-let g:plug_threads = 1
+let g:plug_threads = 4
 
 " ================= Naviagtion ====================
 Plug 'preservim/nerdtree'
@@ -74,5 +74,9 @@ Plug 'mutewinter/nginx.vim'
 Plug 'hashivim/vim-terraform'
 Plug 'JamshedVesuna/vim-markdown-preview'
 " =================================================
+
+" ============= Miscellaneous ================
+Plug 'lambdalisue/suda.vim'
+
 call plug#end()
 

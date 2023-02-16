@@ -1,7 +1,8 @@
 let mapleader = ","
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
-cmap w!! w !sudo tee > /dev/null %
+"cmap w!! w !sudo tee > /dev/null %
+cmap w!! SudaWrite
 
 " Insert a single character, allows for repetition such as 5s
 " http://vim.wikia.com/wiki/Insert_a_single_character
