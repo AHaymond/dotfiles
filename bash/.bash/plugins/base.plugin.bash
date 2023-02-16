@@ -169,3 +169,9 @@ buf ()
     local filetime=$(date +%Y%m%d_%H%M%S)
     cp ${filename} ${filename}_${filetime}
 }
+
+in_array() {
+  arr=$1
+  val=$2
+  [[ " ${arr[*]} " =~ " ${val} " ]]
+}

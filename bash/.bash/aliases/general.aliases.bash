@@ -1,3 +1,7 @@
+# vim to NeoVim ( use \vim to ignore alias and load vim)
+alias vim="nvim"
+alias vi="nvim"
+
 # List directory contents
 alias sl=ls
 alias lsn="ls --color=never"
@@ -8,7 +12,7 @@ alias l='ls -a'
 alias l1='ls -1'
 alias ldu='du -cks * | sort -rn | head -15' # Lists the size of all the folders
 
-alias grep="grep --color=auto --exclude-dir=terraform* --exclude-dir=.terraform* --exclude-dir=.git"
+alias grep="grep -E --color=auto --exclude-dir=.git"
 
 alias gen_ctags="ctags --recurse=yes --exclude=.git --exclude=BUILD --exclude=.svn --exclude=vendor/* --exclude=node_modules/* --exclude=db/* --exclude=log/*"
 
@@ -103,7 +107,8 @@ alias keyboard='systemctl --user start keyboard'
 alias unicreds='assume_profile prod unicreds -r us-east-1'
 alias projects='cd ~/Projects'
 alias tapresearch='projects && cd tapresearch'
-alias raynor='projects && tapresearch && cd raynor'
+alias raynor='tapresearch && cd raynor'
 alias go-kamino='projects && tapresearch && cd kamino'
-alias teachermade='projects && cd teachermade'
+alias tm='projects && cd tm'
+alias tapinfra='tapresearch && cd tap_devops/infrastructure'
 

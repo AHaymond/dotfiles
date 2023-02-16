@@ -2,7 +2,10 @@
 
 # colored grep
 # export GREP_OPTIONS='--color=auto'
-export GREP_COLOR='1;33'
+export GREP_COLORS='mt=1;33'
+
+# GREP_COLOR='1;33' has been deprecated use GREP_COLORS='mt=1;33'
+#export GREP_COLOR='1;33'
 
 # colored ls
 export LSCOLORS='Gxfxcxdxdxegedabagacad'

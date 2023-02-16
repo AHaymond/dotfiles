@@ -1,30 +1,30 @@
 ## .irbrc
 
-require "rubygems"
-require 'irb/completion'
+#require "rubygems"
+#require 'irb/completion'
 ## tab-tab completion, colorizing
-begin
+#begin
 
   # load wirble
-  require 'wirble'
+  #require 'wirble'
 
-  def set_wirble_color
+# def set_wirble_color
     # start wirble (with color)
-    Wirble.init
-    Wirble.colorize
-
-    colors = Wirble::Colorize.colors.merge({
-      :object_class   => :purple,
-      :symbol         => :purple,
-      :symbol_prefix  => :purple
-    })
-    Wirble::Colorize.colors = colors
-    rescue LoadError => err
-      warn "Couldn't load Wirble: #{err}"
-  end
-rescue
-  warn 'Wirble not installed: gem install wirble'
-end
+#    Wirble.init
+#    Wirble.colorize
+#
+#    colors = Wirble::Colorize.colors.merge({
+#      :object_class   => :purple,
+#      :symbol         => :purple,
+#      :symbol_prefix  => :purple
+#    })
+#    Wirble::Colorize.colors = colors
+#    rescue LoadError => err
+#      warn "Couldn't load Wirble: #{err}"
+#  end
+#rescue
+#  warn 'Wirble not installed: gem install wirble'
+#end
 
 ## so you can run pretty print
 # require 'pp'
@@ -52,8 +52,8 @@ if defined? Rails.env
   IRB.conf[:PROMPT_MODE] = :RAILS_ENV
 end
 
-require "awesome_print" rescue warn('failed')
-AwesomePrint.irb!
+#require "awesome_print" rescue warn('failed')
+#AwesomePrint.irb!
 def no_ap # Switch awesome_print off
   #IRB::Irb.class_eval do
   #  def output_value
@@ -88,25 +88,25 @@ end
 
 # Use awesome_print as the default IRB, Rails C formatter
 # must be at the end of the file to take effect when IRB or Rails C is loaded
-unless IRB.version.include?('DietRB')
-  IRB::Irb.class_eval do
-    def output_value
-      ap @context.last_value
-    end
-  end
-  puts "awesome_print: ON".green
-else
-  IRB.formatter = Class.new(IRB::Formatter) do
-    def inspect_object(object)
-      object.ai
-    end
-  end.new
-end
+#unless IRB.version.include?('DietRB')
+#  IRB::Irb.class_eval do
+#    def output_value
+#      ap @context.last_value
+#    end
+#  end
+#  puts "awesome_print: ON".green
+#else
+#  IRB.formatter = Class.new(IRB::Formatter) do
+#    def inspect_object(object)
+#      object.ai
+#    end
+#  end.new
+#end
 
-begin
-    require "pry"
-      Pry.start
-        exit
-rescue LoadError => e
-    warn "=> Unable to load pry"
-end
+#begin
+#    require "pry"
+#      Pry.start
+#        exit
+#rescue LoadError => e
+#    warn "=> Unable to load pry"
+#end

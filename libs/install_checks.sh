@@ -5,7 +5,7 @@ if [ -z "$(command -v stow)" ]; then
 
   'stow' is required to be able to install:
 
-      pacaur -S           <-- On Arch
+      pacman -S stow      <-- On Arch
       apt install stow    <-- On Ubuntu
       brew install stow   <-- On Mac
 EOF

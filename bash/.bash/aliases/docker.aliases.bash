@@ -71,11 +71,11 @@ dbu() {
 
   if [ -n "$IMAGENAME" ]; then
     exec 5>&1
-    ID=$($DOCKERCMD build -t=$IMAGENAME . | tee >(cat - >&5) | tail -1 | awk '{print $NF}')
+    ID=$($DOCKERCMD build --progress=plain -t=$IMAGENAME . | tee >(cat - >&5) | tail -1 | awk '{print $NF}')
     echo -e "Built image: \033[32m$IMAGENAME\033[39m";
   else
     exec 5>&1
-    ID=$($DOCKERCMD build . | tee >(cat - >&5) | tail -1 | awk '{print $NF}')
+    ID=$($DOCKERCMD build --progress=plain . | tee >(cat - >&5) | tail -1 | awk '{print $NF}')
   fi
 
   for tag in $(cat "./Dockerfile" | grep "^#\s\?TAG" | awk '{print $NF}'); do
@@ -89,15 +89,17 @@ dbu() {
 # Clean up images
 dclean() {
   # $1 Specify search
-  if [ -n "$1" ]; then
-    search="$1"
-  else
-    search="<none>"
-  fi
+  #if [ -n "$1" ]; then
+  #  search="$1"
+  #else
+  #  search="<none>"
+  #fi
 
-  $DOCKERCMD rmi -f $($DOCKERCMD images | grep "^$search" | awk '{print $3}');
+  #$DOCKERCMD rmi -f $($DOCKERCMD images | grep "^$search" | awk '{print $3}');
 
-  unset search
+  #unset search
+
+  docker rmi $(docker images -q -f dangling=true)
 }
 
 ####################################

@@ -10,16 +10,17 @@ EOF
 
 # Desktop
 stow bash && echo "✓ bash"
-stow dunst && echo "✓ dunst"
-stow polybar && echo "✓ polybar"
-stow i3 && echo "✓ i3"
-stow user_systemd && echo "✓ user_systemd"
-stow wallpaper && echo "✓ wallpaper"
+#stow dunst && echo "✓ dunst"
+#stow polybar && echo "✓ polybar"
+#stow i3 && echo "✓ i3"
+#stow user_systemd && echo "✓ user_systemd"
+#stow wallpaper && echo "✓ wallpaper"
 sudo stow bin && echo "✓ bin"
-sudo stow -t / x11 && echo "✓ x11"
+#sudo stow -t / x11 && echo "✓ x11"
 
 # Dev
-stow vim && echo "✓ vim"
+#stow vim && echo "✓ vim"
+stow nvim "✓ neovim"
 stow tmux && echo "✓ tmux"
 stow git && echo "✓ git"
 ln -sf $DOTFILES_FOLDER/git/.gitignore $HOME/

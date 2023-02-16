@@ -28,6 +28,7 @@ notes/
 .hubot_history
 aws_creds
 .envrc
+.my_envrc
 
 # Compiled source #
 ###################
@@ -36,7 +37,6 @@ aws_creds
 *.dll
 *.exe
 *.o
-*.so
 
 # Packages #
 ############
@@ -69,3 +69,5 @@ Thumbs.db
 tags
 
 !vendor/*.com
+.pryrc
+get-suppression

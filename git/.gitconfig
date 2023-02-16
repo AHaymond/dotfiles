@@ -25,6 +25,7 @@
   changed = log --name-status
   fud = fetch upstream develop
   rud = rebase upstream/develop
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
 
 [credential]
   helper = !aws --profile prod codecommit credential-helper $@
@@ -45,7 +46,7 @@
   enabled = true
 [github]
   user = AHaymond
-[url "git@github.com:"]
+[url "ssh://git@github.com/"]
   insteadOf = https://github.com/
 [url "git@bitbucket.org:"]
   insteadOf = https://bitbucket.org/
@@ -53,3 +54,5 @@
 	defaultBranch = master
 [pull]
 	rebase = true
+[advice]
+	skippedCherryPicks = false
