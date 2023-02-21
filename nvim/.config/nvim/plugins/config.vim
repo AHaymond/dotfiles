@@ -42,7 +42,7 @@ let g:airline#extenstions#whitespace#enabled = 0
 " ============ vim-commentary ==============
 autocmd FileType ruby set commentstring=#\ %s
 autocmd FileType vim set commentstring=\"\ %s
-autocmd FileType javascript set commentstring \/\/\ %s
+autocmd FileType javascript set commentstring=\/\/\ %s
 " ==========================================
 
 " ========= scrooloose/syntastic ===========
