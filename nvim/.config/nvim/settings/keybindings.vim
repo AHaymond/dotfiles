@@ -85,7 +85,7 @@ nmap <silent><leader>ll :set list!<CR>
 nnoremap <leader>l :TagbarToggle<CR>
 
 " NerdTree key binding
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NvimTreeToggle<CR>
 
 " Shellcheck key binding
 nnoremap <leader>s :SyntasticCheck shellcheck<CR>

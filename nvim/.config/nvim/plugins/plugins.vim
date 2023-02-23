@@ -14,6 +14,8 @@ let g:plug_threads = 4
 
 " ================= Naviagtion ====================
 Plug 'preservim/nerdtree'
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-tree/nvim-tree.lua'
 
 Plug 'ctrlpvim/ctrlp.vim'
 
