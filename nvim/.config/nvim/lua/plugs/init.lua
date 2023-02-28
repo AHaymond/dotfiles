@@ -61,6 +61,7 @@ lazy.setup({
   },
   {
     'sainnhe/sonokai',
+    lazy = true,
     config = function() require('plugs.ui.colorscheme')end
   }
 })

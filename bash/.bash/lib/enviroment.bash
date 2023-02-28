@@ -6,11 +6,11 @@ export EDITOR='vim'
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
-if [[ -n "$TMUX" ]]; then
- export TERM="screen-256color"
-else
- export TERM="xterm-256color"
-fi
+#if [[ -n "$TMUX" ]]; then
+# export TERM="screen-256color"
+#else
+# export TERM="xterm-256color"
+#fi
 
 if [[ "$OSTYPE" =~ "linux" ]]; then
   export TERMCMD="urxvt"
