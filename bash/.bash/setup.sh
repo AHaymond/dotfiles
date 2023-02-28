@@ -8,6 +8,10 @@ alias reload='source ~/.bashrc'
 # set 256 colors
 export TERM=xterm-256color
 
+if [ $(uname -s) = "Darwin" ]; then
+  export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo
+fi
+
 # add dotfiles bin
 export PATH="$PATH:$BASHFILES/bin"
 

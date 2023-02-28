@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/Users/adam/.dotfiles/bash/.bash'
+let g:netrw_dirhist_9='/Users/adam/.dotfiles/bash/.bash/util'
+let g:netrw_dirhist_8='/Users/adam/.dotfiles/bash/.bash'
+let g:netrw_dirhist_7='/Users/adam/.dotfiles/bash/.bash/plugins'
+let g:netrw_dirhist_6='/Users/adam/.dotfiles/bash/.bash'
+let g:netrw_dirhist_5='/Users/adam/.dotfiles/bash'
+let g:netrw_dirhist_4='/Users/adam/.dotfiles'
+let g:netrw_dirhist_3='/Users/adam'
+let g:netrw_dirhist_2='/Users/adam/.dotfiles/bash/.bash/plugins'
+let g:netrw_dirhist_1='/Users/adam/.dotfiles/bash/.bash'
