@@ -2,10 +2,10 @@ tmuxa() {
   if [[ $(tmux list-sessions) =~ windows ]]
   then
   # attach to the existing session
-    tmux attach
+    tmux -2 attach
   else
   # just create a session
-    tmux
+    tmux -2
   fi
 }
 
