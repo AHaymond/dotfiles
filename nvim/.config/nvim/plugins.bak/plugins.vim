@@ -13,15 +13,19 @@ let g:plug_url_format = 'git@github.com:%s.git'
 let g:plug_threads = 4
 
 " ================= Naviagtion ====================
-Plug 'preservim/nerdtree'
+"Plug 'preservim/nerdtree'
+
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 
-Plug 'tacahiroy/ctrlp-funky'
+"Plug 'ctrlpvim/ctrlp.vim'
 
-Plug 'fisadev/vim-ctrlp-cmdpalette'
+"Plug 'tacahiroy/ctrlp-funky'
+
+"Plug 'fisadev/vim-ctrlp-cmdpalette'
 
 Plug 'Lokaltog/vim-easymotion'
 
@@ -29,6 +33,7 @@ Plug 'Lokaltog/vim-easymotion'
 " =================================================
 
 " ==================== Color ======================
+Plug 'ful1e5/onedark.nvim'
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'crusoexia/vim-monokai'
 Plug 'nanotech/jellybeans.vim'
@@ -38,8 +43,9 @@ Plug 'antlypls/vim-colors-codeschool'
 " =================================================
 
 " ===================== UI ========================
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lualine/lualine.nvim'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 " =================================================
 
 " ================== Commands =====================
@@ -48,6 +54,8 @@ Plug 'tpope/vim-commentary'
 " =================================================
 
 " ============= Language Additions ================
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 Plug 'scrooloose/syntastic'
 
 " Go

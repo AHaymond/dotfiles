@@ -1,3 +1,5 @@
+"runtime! plugins/lua/**.lua
+
 " ================ NerdTree ================
 let NERDTreeShowBookmarks=1
 let NERDTreeSortOrder=[]
@@ -31,12 +33,12 @@ let g:EasyMotion_use_smartsign_us = 1
 "let g:tagbar_autofocus = 1
 " ==========================================
 
-" ============== Powerline =================
-let g:airline_theme = 'powerlineish'
-let g:airline_powerline_fonts = 1
-let g:airline#extenstions#branch#enabled = 1
-let g:airline#extenstions#syntastic#enabled = 1
-let g:airline#extenstions#whitespace#enabled = 0
+" ================ Airline ================= moving to LuaLine 23FEB23
+"let g:airline_theme = 'powerlineish'
+"let g:airline_powerline_fonts = 1
+"let g:airline#extenstions#branch#enabled = 1
+"let g:airline#extenstions#syntastic#enabled = 1
+"let g:airline#extenstions#whitespace#enabled = 0
 " ==========================================
 
 " ============ vim-commentary ==============
@@ -72,3 +74,4 @@ let g:go_fmt_fail_silently = 1
 " ========== vim-ruby/vim-ruby =============
 let ruby_operators=1
 " ==========================================
+

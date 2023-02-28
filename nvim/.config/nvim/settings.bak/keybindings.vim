@@ -1,5 +1,9 @@
 let mapleader = ","
-
+" Using Lua functions
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 "cmap w!! w !sudo tee > /dev/null %
 cmap w!! SudaWrite
@@ -112,10 +116,8 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Easymotion
-" nmap s <Plug>(easymotion-s)
-" nmap S <Plug>(easymotion-s2)
-map f <Plug>(easymotion-f)
-map F <Plug>(easymotion-F)
+"map f <Plug>(easymotion-f)
+"map F <Plug>(easymotion-F)
 nmap <Leader>J <Plug>(easymotion-eol-j)
 nmap <Leader>K <Plug>(easymotion-eol-k)
 " map  / <Plug>(easymotion-sn)

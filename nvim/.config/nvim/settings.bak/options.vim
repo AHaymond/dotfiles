@@ -57,6 +57,4 @@ autocmd FileType html,xml set listchars-=tab:>.
 " will automatically remove all trailing whitespace before saving.
 autocmd BufWritePre * %s/\s\+$//e
 " -------------------------------
-set foldmethod=indent		"automatically fold by indent level
-set foldlevelstart=9999
 
