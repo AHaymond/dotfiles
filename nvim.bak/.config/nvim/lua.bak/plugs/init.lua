@@ -1,12 +1,12 @@
 require("plugs.strap")
 local lazy = require("lazy")
+
 lazy.setup({
-  concurrency = 4,
   {
     'nvim-treesitter/nvim-treesitter',
     run = ":TSUpdate",
-    cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
     event = "VeryLazy",
+    cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
     config = function() require('plugs.ts.treesitter') end
   },
   {
@@ -15,11 +15,6 @@ lazy.setup({
     cmd = "NvimTreeToggle",
     lazy = true,
     config = function() require('plugs.util.nvim-tree') end
-  },
-  {
-    'nvim-lualine/lualine.nvim',
-    event = "VeryLazy",
-    config = function() require('plugs.util.lualine')end
   },
   {
     "kyazdani42/nvim-web-devicons",
@@ -39,26 +34,35 @@ lazy.setup({
     config = function() require('plugs.util.telescope')end
   },
   {
+    'nvim-lualine/lualine.nvim',
+    event = "VeryLazy",
+    config = function() require('plugs.util.lualine')end
+  },
+  {
     "folke/which-key.nvim",
     config = function() require('plugs.util.which-key')end
   },
+
+  -- All the color schemes, set in .config/nvim/lua/core/cfg.lua
   {
-    "hashivim/vim-terraform",
-    lazy = false
+    'folke/tokyonight.nvim',
+    event = "VeryLazy",
+  --  config = function() require('plugs.ui.colorscheme')end
   },
   {
-    "dense-analysis/ale",
-    init = function() require('plugs.util.ale')end
+    'ellisonleao/gruvbox.nvim', -- inlcude this for dark >> vim.o.background = "dark"
+    event = "VeryLazy",
+    --config = function() require('plugs.ui.colorscheme')end
   },
   {
-    "tpope/vim-fugitive",
-    event = "VeryLazy"
+    'EdenEast/nightfox.nvim',
+   -- event = "VeryLazy",
+   -- config = function() require('plugs.ui.colorscheme')end
   },
-  -- Colorscheme
   {
     'sainnhe/sonokai',
     lazy = false,
     priority = 1000,
-    config = function() require('plugs.ui.colorscheme') end
+    config = function() require('plugs.ui.colorscheme')end
   }
 })

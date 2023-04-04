@@ -1,0 +1,5 @@
+{
+  "lazy.nvim": { "branch": "main", "commit": "26d121ea13bee96b079403cee6598f04969d4983" },
+  "nvim-tree.lua": { "branch": "master", "commit": "362ecbeed69fae91a287004619decadcb6f7c113" },
+  "sonokai": { "branch": "master", "commit": "296f7fa3432f7d9b55b27ad0023f8824701cfec4" }
+}

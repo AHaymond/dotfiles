@@ -3,7 +3,7 @@
   email = coastgrd@gmail.com
 [core]
   excludesfile = ~/.gitignore
-  editor = vim
+  editor = nvim
   autocrlf = false
 [color]
   status = auto

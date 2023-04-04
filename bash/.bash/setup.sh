@@ -6,7 +6,7 @@ export BASH_THEME=${BASH_THEME:-"adam"}
 alias reload='source ~/.bashrc'
 
 # set 256 colors
-export TERM=xterm-256color
+#export TERM=xterm-256color
 
 if [ $(uname -s) = "Darwin" ]; then
   export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo

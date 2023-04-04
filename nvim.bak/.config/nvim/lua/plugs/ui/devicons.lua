@@ -31,6 +31,7 @@ local config = {
       icon = "",
       name = "TrueTypeFont",
     },
+    rb = { icon = "" },
     yuck = { icon = "", name = "Yuck" },
     vim = { icon = "", name = "Vim" },
     rpm = { icon = "", name = "RPM" },

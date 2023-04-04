@@ -71,3 +71,5 @@ tags
 !vendor/*.com
 .pryrc
 get-suppression
+.asci_text_url
+.nvmrc

@@ -3,20 +3,9 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- ##This sort will sort only by name and not with preference to folders first
--- ####it kind of sucks, so maybe lets not use it.
---local sort_by = function(nodes)
---  table.sort(nodes, function(a, b)
---    return string.lower(a.name) < string.lower(b.name)
---  end)
---end
-
-local api = require("nvim-tree.api")
-
-vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true })
 
 require("nvim-tree").setup({
- sort_by = "case-sensitive",
+ sort_by = "case_sensitive",
  view = {
    width = 30,
    mappings = {
@@ -33,27 +22,17 @@ require("nvim-tree").setup({
      enable = true,
    },
    icons = {
-     modified_placement = "before",
-     show = {
-       modified = true
-     },
      glyphs = {
        default = '',
        symlink = '',
-       modified = '󰃉',
      },
    },
    group_empty = true,
  },
- modified = {
-  enable = true,
-  show_on_dirs = false,
- },
  filters = {
    dotfiles = true,
  },
- git = {
-   ignore = false,
- },
 })
+
+
 -- ==============================

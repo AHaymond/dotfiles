@@ -1,20 +1,17 @@
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<C-b>', builtin.buffers, {})
+vim.keymap.set('n', '<C-b>', '<CMD>Telescope oldfiles cwd_only=true alternate=git_files<CR>', {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-vim.keymap.set('n', '<leader>l', ":Telescope treesitter<CR>", { silent = true })
-vim.keymap.set('n', '<C-l>', ":Telescope treesitter<CR>", { silent = true })
 
 local actions = require('telescope.actions')
 require('telescope').setup {
-  pickers = {
-    buffers = {
-      sort_mru = true,
-      ignore_current_buffer = true,
-    }
-  },
   defaults = {
+    pickers = {
+      buffers = {
+        sort_lastused = true,
+      }
+    },
     layout_config = {
       horizontal = {
         prompt_position = "top",
@@ -34,15 +31,15 @@ require('telescope').setup {
     vimgrep_arguments = {
       'rg', '--no-heading', '--with-filename', '--line-number', '--column', '--smart-case', '--hidden'
     },
-    prompt_prefix = "  ",
-    selection_caret = "  ",
+    prompt_prefix = "	⌕  ",
+    selection_caret = "  ",
     entry_prefix = "  ",
     initial_mode = "insert",
     selection_strategy = "reset",
     sorting_strategy = "ascending",
     layout_strategy = "horizontal",
     file_sorter = require 'telescope.sorters'.get_fuzzy_file,
-    file_ignore_patterns = { "*.spec", "vendor/cache", "node_modules", ".terraspace_cache" },
+    file_ignore_patterns = { "vendor/cache", "node_modules", ".terraspace_cache" },
     generic_sorter = require 'telescope.sorters'.get_generic_fuzzy_sorter,
     path_display = {},
     winblend = 0,
@@ -70,4 +67,11 @@ require('telescope').setup {
       }
     }
   },
+  extensions = {
+    media = {
+--      backend = "ueberzug", -- "ueberzug"|"viu"|"chafa"|"jp2a"|catimg
+      cache_path = "/tmp/tele.media.cache",
+      hidden = false
+    }
+  }
 }
