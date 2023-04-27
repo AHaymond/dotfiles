@@ -1,7 +1,13 @@
 -- Open NvimTree properly when passed a directory
 vim.api.nvim_create_autocmd({"VimEnter"}, {pattern = "*", callback = function(data)
   -- buffer is a directory
+  if (data.file == "") then
+    data.file = os.getenv("PWD")
+  end
+
   local directory = vim.fn.isdirectory(data.file) == 1
+
+  print(os.getenv("PWD"))
 
   if not directory then
     if 1 == #vim.v.argv then
@@ -21,4 +27,5 @@ vim.api.nvim_create_autocmd({"VimEnter"}, {pattern = "*", callback = function(da
 
   -- Open NivmTree
   vim.cmd('NvimTreeToggle')
+
 end})

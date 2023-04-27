@@ -18,6 +18,8 @@ opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 opt.wrap = true
+opt.foldmethod = 'indent'
+opt.foldlevelstart = 9999
 --
 --
 ---- Disabling some built in plugins
