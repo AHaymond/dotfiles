@@ -79,7 +79,7 @@ end
 vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true })
 
 require("nvim-tree").setup({
- sort_by = "case-sensitive",
+ sort_by = "case_sensitive",
  view = {
    width = 30,
  },
