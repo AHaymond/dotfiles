@@ -105,10 +105,12 @@ alias path='echo -e ${PATH//:/\\n}'  # Print out PATH with newlines after each p
 alias now='date -u && date'
 alias keyboard='systemctl --user start keyboard'
 alias unicreds='assume_profile prod unicreds -r us-east-1'
-alias projects='cd ~/Projects'
-alias tapresearch='projects && cd tapresearch'
-alias raynor='tapresearch && cd raynor'
 alias go-kamino='projects && tapresearch && cd kamino'
 alias tm='projects && cd tm'
-alias tapinfra='tapresearch && cd tap_devops/infrastructure'
 
+alias projects='cd ~/Projects'
+
+alias tapresearch='projects && cd tapresearch'
+alias raynor='tapresearch && cd raynor'
+alias tapinfra='tapresearch && cd tap_devops/infrastructure'
+alias shiloh='tapresearch && cd tap_devops/shiloh'

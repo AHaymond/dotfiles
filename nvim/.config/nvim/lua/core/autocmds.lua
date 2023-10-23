@@ -7,10 +7,19 @@ vim.api.nvim_create_autocmd({"VimEnter"}, {pattern = "*", callback = function(da
 
   local directory = vim.fn.isdirectory(data.file) == 1
 
-  print(os.getenv("PWD"))
+  -- Neovim now starts with a --embed flag
+  -- so it is necessary to remove that flag
+  -- so we can look for a file or directory
+  -- passed to it when it starts up
+  local args = {}
+  for _, v in pairs(vim.v.argv) do
+    if string.sub(v,1,2) ~= "--" then
+      table.insert(args,v)
+    end
+  end
 
   if not directory then
-    if 1 == #vim.v.argv then
+    if 1 == #args then
       vim.cmd('NvimTreeToggle')
     end
     return

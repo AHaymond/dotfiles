@@ -26,8 +26,8 @@ stow git && echo "✓ git"
 ln -sf $DOTFILES_FOLDER/git/.gitignore $HOME/
 stow ruby_essentials && echo "✓ ruby essentials"
 stow terraform && echo "✓ terraform"
+stow yamllint && echo "✓ yamllint"
 
 cat <<EOF
 Done.
 EOF
-
