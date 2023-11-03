@@ -20,7 +20,8 @@ sudo stow bin && echo "✓ bin"
 
 # Dev
 #stow vim && echo "✓ vim"
-stow nvim "✓ neovim"
+stow nvim && echo "✓ neovim"
+stow nvm && echo "✓ nvm"
 stow tmux && echo "✓ tmux"
 stow git && echo "✓ git"
 ln -sf $DOTFILES_FOLDER/git/.gitignore $HOME/
