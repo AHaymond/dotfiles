@@ -60,5 +60,5 @@ lazy.setup({
     lazy = false,
     priority = 1000,
     config = function() require('plugs.ui.colorscheme') end
-  }
+  },
 })
