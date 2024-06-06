@@ -5,9 +5,11 @@ function quitvpn() {
   echo -e "Disconnected from VPN\ndns resolver: $resolver"
 }
 
+# see https://github.com/jonathanio/update-systemd-resolved
+# for getting it to update DNS settings when the vpn connects
 function openvpnswitch() {
   local vpns=("tm" "tap")
-  current=$(ps aux | grep "/usr/bin/[o]penvpn" | awk '{print $(NF)}' | cut -f1 -d'.')
+  current=$(ps aux | grep "/usr/local/sbin/[o]penvpn" | awk '{print $(NF)}' | cut -f1 -d'.')
 
   if [ "$1" = "quit" ] && [ -n "$current" ]; then
     quitvpn
@@ -34,8 +36,8 @@ function openvpnswitch() {
       fi
       sudo systemctl start openvpn-client@$vpnvar
       sleep 3
-      resolver=$(tail -n-1 /etc/resolv.conf | awk '{print $2}')
-      echo -e "Now connected to $vpnvar vpn\ndns resolver: $resolver"
+      #resolver=$(tail -n-1 /etc/resolv.conf | awk '{print $2}')
+      echo -e "Now connected to $vpnvar vpn" #\ndns resolver: $resolver"
     else
       echo "Already connected to $current vpn, nothing to do."
     fi
