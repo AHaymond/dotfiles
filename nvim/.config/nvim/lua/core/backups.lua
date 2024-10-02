@@ -1,4 +1,5 @@
-vim.api.nvim_exec([[
+vim.api.nvim_exec2(
+	[[
 set history=1000  "store a ton of history
 set nobackup      " enable backups
 set nowritebackup
@@ -14,4 +15,6 @@ if exists("+undofile")
   set undolevels=1000   " maximum number of changes that can be undone
   set undoreload=10000  " maximum number of lines to save for undo on a buffer reload
 endif
-]], false)
+]],
+	{}
+)

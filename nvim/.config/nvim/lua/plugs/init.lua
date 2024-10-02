@@ -1,3 +1,7 @@
+-- disable netrw see :help nvim-tree-netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 require("plugs.strap")
 local lazy = require("lazy")
 lazy.setup({
@@ -38,10 +42,11 @@ lazy.setup({
 
     config = function() require('plugs.util.telescope')end
   },
-  {
-    "folke/which-key.nvim",
-    config = function() require('plugs.util.which-key')end
-  },
+--  {
+--    event = "VeryLazy",
+--    "folke/which-key.nvim",
+--    config = function() require('plugs.util.which-key')end
+--  },
   {
     "hashivim/vim-terraform",
     lazy = false
