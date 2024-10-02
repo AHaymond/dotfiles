@@ -5,7 +5,7 @@ local my_on_attach = function(bufnr)
     return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
   end
 
-  local map = LazyVim.safe_keymap_set
+  local map = vim.keymap.set
 
   map("n", "<C-d>", api.tree.change_root_to_node, opts("CD"))
   map("n", "<BS>", api.node.navigate.parent_close, opts("Close Directory"))
