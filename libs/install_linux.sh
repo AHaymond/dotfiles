@@ -13,7 +13,7 @@ stow bash && echo "✓ bash"
 sudo stow bin && echo "✓ bin"
 
 # Dev
-stow lazyvim && echo "✓ neovim"
+stow nvim && echo "✓ neovim"
 stow tmux && echo "✓ tmux"
 stow git && echo "✓ git"
 ln -sf "$DOTFILES_FOLDER/git/.gitignore" "$HOME/"
