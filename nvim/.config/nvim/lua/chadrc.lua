@@ -12,7 +12,8 @@ M.ui = {
   statusline = {
     theme = "default",           -- Options: "default", "vscode", "minimal", "vscode_colored"
     separator_style = "default", -- "default", "round", "block", "arrow"
-    order = { "mode", "file_long", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
+    --order = { "mode", "file_long", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
+    order = { "mode", "file_long", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
     modules = {
       file_long = function()
         local icon = " 󰈚 "
@@ -33,7 +34,7 @@ M.ui = {
 }
 
 M.base46 = {
-  theme = "bearded-arc",
+  theme = "onedark",
 
   -- hl_override = {
   -- 	Comment = { italic = true },

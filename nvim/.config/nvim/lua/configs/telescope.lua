@@ -1,12 +1,18 @@
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<C-b>', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-vim.keymap.set('n', '<leader>l', ":Telescope treesitter<CR>", { silent = true })
-vim.keymap.set('n', '<C-l>', ":Telescope treesitter<CR>", { silent = true })
+--local builtin = require('telescope.builtin')
+local keymap = vim.keymap
+keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
+keymap.set("n", "<C-b>", "<cmd>Telescope buffers<cr>", { desc = "Fuzzy find recent files" })
+keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+--vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+--vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+--vim.keymap.set('n', '<C-b>', builtin.buffers, {})
+--vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+--vim.keymap.set('n', '<leader>l', ":Telescope treesitter<CR>", { silent = true })
+--vim.keymap.set('n', '<C-l>', ":Telescope treesitter<CR>", { silent = true })
 
-local actions = require('telescope.actions')
+local telescope = require("telescope")
+local actions = require("telescope.actions")
 local options = {
   pickers = {
     buffers = {
@@ -71,6 +77,8 @@ local options = {
     }
   },
 }
+
+telescope.load_extension("fzf")
 
 local merged_config = vim.tbl_deep_extend("force", require "nvchad.configs.telescope", options)
 

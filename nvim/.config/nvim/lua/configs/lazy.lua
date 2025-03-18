@@ -4,7 +4,7 @@ return {
 
   git = {
     throttle = {
-      enabled = true,
+      enabled = false,
       rate = 5,
       duration = 3 * 1000,
     }
