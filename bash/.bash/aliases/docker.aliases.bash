@@ -121,6 +121,9 @@ alias dcud="$DOCKERCOMPOSECMD up -d"
 # Docker compose run
 alias dcr="$DOCKERCOMPOSECMD run"
 
+# Docker compose restart
+alias dcrs="$DOCKERCOMPOSECMD restart"
+
 # Docker compose start
 alias dcs="$DOCKERCOMPOSECMD start"
 
@@ -129,6 +132,9 @@ alias dcp="$DOCKERCOMPOSECMD stop"
 
 # Docker compose logs
 alias dcl="$DOCKERCOMPOSECMD logs"
+
+# Docker compose logs -f
+alias dclf="$DOCKERCOMPOSECMD logs -f"
 
 # Pull all images in docker-compose.yml
 dcpull() {

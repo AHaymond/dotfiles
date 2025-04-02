@@ -11,7 +11,7 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find s
 --vim.keymap.set('n', '<leader>l', ":Telescope treesitter<CR>", { silent = true })
 --vim.keymap.set('n', '<C-l>', ":Telescope treesitter<CR>", { silent = true })
 
-local telescope = require("telescope")
+-- local telescope = require("telescope")
 local actions = require("telescope.actions")
 local options = {
   pickers = {
@@ -78,7 +78,7 @@ local options = {
   },
 }
 
-telescope.load_extension("fzf")
+--telescope.load_extension("fzf")
 
 local merged_config = vim.tbl_deep_extend("force", require "nvchad.configs.telescope", options)
 

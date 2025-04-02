@@ -1,36 +1,83 @@
 local options = {
-  -- A list of parser names, or "all"
-  ensure_installed = { "python", "javascript", "lua", "ruby", "hcl", "go" },
-
-  -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
-
-  -- Automatically install missing parsers when entering buffer
-  auto_install = true,
-
-
-  highlight = {
-    -- `false` will disable the whole extension
-
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = false,
-  },
-  autotag = { -- Auto tag html
-    enable = true,
-    filetypes = { "html" , "xml", "javascriptreact", "typescriptreact" },
-  },
-  rainbow = {
-    enable = false,
-    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
-    extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
-    max_file_lines = nil,    -- colors = {}, -- table of hex stringsnes = nil, -- Do not enable for files with more than n lines, int
-    -- termcolors = {} -- table of colour name strings
-  },
+	auto_install = true,
+	highlight = {
+		enable = true
+	},
+	ensure_installed = {
+		-- General
+		"lua",
+		"markdown",
+		"json5",
+		"toml",
+		"vim",
+		--
+		-- Web
+		"html",
+		"css",
+		"javascript",
+		--
+		-- Node
+		"typescript",
+		"tsx",
+		--
+		-- Ruby
+		"ruby",
+		--
+		-- Go
+		"go",
+		"gomod",
+		"gosum",
+		"gowork",
+		--
+		-- DevOps
+		"bash",
+		"terraform",
+		"hcl",
+	},
 }
 
-local merged_config = vim.tbl_deep_extend("force", require "nvchad.configs.treesitter", options)
+local merged_options = vim.tbl_deep_extend("force", require "nvchad.configs.treesitter", options)
 
-require("nvim-treesitter.configs").setup(merged_config)
+require("nvim-treesitter.configs").setup(merged_options)
+
+--local options = {
+--  -- A list of parser names, or "all"
+--  ensure_installed = { "python", "javascript", "lua", "ruby", "hcl", "go", "terraform" },
+--
+--  -- Install parsers synchronously (only applied to `ensure_installed`)
+--  sync_install = false,
+--
+--  -- Automatically install missing parsers when entering buffer
+--  auto_install = true,
+--
+--
+--  highlight = {
+--
+--    -- `false` will disable the whole extension
+--
+--    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+--    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+--    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+--    -- Instead of true it can also be a list of languages
+--    additional_vim_regex_highlighting = {
+--      terraform_erb = true
+--    }
+--  },
+--
+--  autotag = { -- Auto tag html
+--    enable = true,
+--    filetypes = { "html", "xml", "javascriptreact", "typescriptreact" },
+--  },
+--
+--  rainbow = {
+--    enable = false,
+--    -- disable = { "jsx", "cpp" }, list of languages you want to disable the plugin for
+--    extended_mode = false, -- Also highlight non-bracket delimiters like html tags, boolean or table: lang -> boolean
+--    max_file_lines = nil,  -- colors = {}, -- table of hex stringsnes = nil, -- Do not enable for files with more than n lines, int
+--    -- termcolors = {} -- table of colour name strings
+--  },
+--}
+
+--local merged_config = vim.tbl_deep_extend("force", require "nvchad.configs.treesitter", options)
+
+--require("nvim-treesitter.configs").setup(merged_config)
