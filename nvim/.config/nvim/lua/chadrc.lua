@@ -5,6 +5,14 @@
 ---@type ChadrcConfig
 local M = {}
 
+M.base46 = {
+  hl_override = {
+    indent = {
+      char = "",
+    },
+  },
+}
+
 M.ui = {
   tabufline = {
     enabled = false
