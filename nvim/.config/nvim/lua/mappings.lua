@@ -21,6 +21,8 @@ endfunction
 map('n', 's', ':<C-U>exec "normal i".RepeatChar(nr2char(getchar()), v:count1)<CR>', { noremap = true, silent = true })
 map('n', 'S', ':<C-U>exec "normal a".RepeatChar(nr2char(getchar()), v:count1)<CR>', { noremap = true, silent = true })
 
+map('n', '<leader>gs', '<cmd>Gitsigns toggle_signs<CR>', { noremap = true, silent = true })
+
 --map('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 -- allow moving lines up and down using ctrl-j and ctrl-k
