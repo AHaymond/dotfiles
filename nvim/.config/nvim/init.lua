@@ -41,17 +41,3 @@ vim.schedule(function()
   require "mappings"
   require "commands"
 end)
-
-vim.g.clipboard = {
-  name = "macOS-clipboard",
-  copy = {
-    ["+"] = "mac-clipboard",
-    ["*"] = "mac-clipboard",
-  },
-  paste = {
-    ["+"] = "ssh adam@macbook-pro.local pbpaste",
-    ["*"] = "ssh adam@macbook-pro.local pbpaste",
-  },
-  cache_enabled = 0,
-}
-vim.opt.clipboard = "unnamedplus"

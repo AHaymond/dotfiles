@@ -1,11 +1,11 @@
 return {
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    opts = {
-      indent = {
-        char = "",
-      },
-    }
-  }
+  -- {
+  --   "lukas-reineke/indent-blankline.nvim",
+  --   opts = {
+  --     indent = {
+  --       char = "",
+  --     },
+  --   }
+  -- }
 
 }

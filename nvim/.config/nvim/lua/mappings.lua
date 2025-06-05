@@ -21,7 +21,9 @@ endfunction
 map('n', 's', ':<C-U>exec "normal i".RepeatChar(nr2char(getchar()), v:count1)<CR>', { noremap = true, silent = true })
 map('n', 'S', ':<C-U>exec "normal a".RepeatChar(nr2char(getchar()), v:count1)<CR>', { noremap = true, silent = true })
 
-map('n', '<leader>gs', '<cmd>Gitsigns toggle_signs<CR>', { noremap = true, silent = true })
+-- Turn off line numbers, close nvim-tree, and git signs to enable mouse highlighting and copying
+map('n', '<leader>gs', '<cmd>Gitsigns toggle_signs<CR><cmd>IBLToggle<CR><cmd>set number!<CR><cmd>NvimTreeToggle<CR>',
+  { noremap = true, silent = true })
 
 --map('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
@@ -52,6 +54,10 @@ map('v', '<left>', 'h', {})
 map('v', '<right>', 'l', {})
 
 map('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true })
+
+-- move to next/previous diagnostic (aka error)
+map("n", "]g", ":lua vim.diagnostic.goto_next()<CR>")
+map("n", "[g", ":lua vim.diagnostic.goto_prev()<CR>")
 
 map('n', '<leader>da', function()
   vim.diagnostic.open_float({
