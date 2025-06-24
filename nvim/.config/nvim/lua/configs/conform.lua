@@ -1,4 +1,5 @@
 local options = {
+  lsp_fallback = true,
   formatters_by_ft = {
     lua = { "stylua" },
     ruby = { "prettierd" },
@@ -13,15 +14,10 @@ local options = {
     async = false,
     timeout_ms = 15000,
     lsp_fallback = true,
-    stop_after_first = true
+    --stop_after_first = true
   },
 
-  default_format_opts = {
-    async = false,
-    quiet = false,
-    timeout_ms = 3000,
-    lsp_format = "fallback"
-  },
+  -- default_format_opts = { async = false, quiet = false, timeout_ms = 3000, lsp_format = "fallback" },
   -- Customize formatters
   formatters = {
     shfmt = {
@@ -29,10 +25,9 @@ local options = {
     },
     goimports = {
       command = "goimports",
-      -- Simplified args since Conform handles the filename
-      -- args = function()
-      --   return { "-w", "$FILENAME" }
-      -- end,
+      args = function()
+        return { "-w", "$FILENAME" }
+      end,
       stdin = false,
     },
     notify_on_error = true,
