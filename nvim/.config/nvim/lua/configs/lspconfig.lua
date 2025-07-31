@@ -43,6 +43,10 @@ lspconfig.gopls.setup {
   filetypes = { "go", "gotempl", "gowork", "gomod" },
   settings = {
     gopls = {
+      env = {
+        GOPROXY = "https://proxy.golang.org,direct",
+        GO111MODULE = "on",
+      },
       gofumpt = true,
       codelenses = {
         gc_details = false,

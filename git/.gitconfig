@@ -53,7 +53,7 @@
 [init]
 	defaultBranch = master
 [pull]
-	rebase = true
+  #rebase = true
 [advice]
 	skippedCherryPicks = false
 [url "git@github.com:"]
