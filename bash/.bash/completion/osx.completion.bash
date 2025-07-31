@@ -1,4 +1,4 @@
-if [[ "$OSTYPE" =~ "darwin" ]]; then
+if [[ $(uname) =~ "Darwin" ]]; then
   if [ `command -v 'brew'` ]; then
     if [ -f `brew --prefix`/etc/bash_completion ]; then
       . `brew --prefix`/etc/bash_completion
