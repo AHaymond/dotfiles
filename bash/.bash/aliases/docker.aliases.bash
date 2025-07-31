@@ -14,7 +14,7 @@ DOCKERCOMPOSECMD="docker compose"
 # that causes it to not connect to et-server's
 if [ "$(uname)" == "Darwin" ]; then
   alias docker-et="$DOCKERCMD run --rm -it -v '/Users/adam/.ssh:/root/.ssh' -e SSH_AUTH_SOCK=set et-client"
-if
+fi
 
 # Make docker shorter
 alias d="$DOCKERCMD"
