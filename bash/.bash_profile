@@ -12,8 +12,10 @@ if [ -e /opt/homebrew/bin/rbenv ]; then
 fi
 # load nvm for managing node versions
 export NVM_DIR="$HOME/.nvm"
-if [ $(uname) == "Darwin" ]; then 
+if [ $(uname) == "Darwin" ]; then
   [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
   [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 fi
 eval "$(direnv hook bash)"
+
+export PATH="$PATH:/home/grunklestan/.dotfiles/bin/.local/bin"
