@@ -9,7 +9,12 @@ DOCKERCOMPOSECMD="docker compose"
 #  Docker
 ####################################
 
-alias docker-et="$DOCKERCMD run --rm -it -v '/Users/adam/.ssh:/root/.ssh' et-client"
+# Only needed for Docker Desktop on MacOS
+# as of 6.2.9 there is a bug in eternal terminal
+# that causes it to not connect to et-server's
+if [ "$(uname)" == "Darwin" ]; then
+  alias docker-et="$DOCKERCMD run --rm -it -v '/Users/adam/.ssh:/root/.ssh' -e SSH_AUTH_SOCK=set et-client"
+if
 
 # Make docker shorter
 alias d="$DOCKERCMD"
