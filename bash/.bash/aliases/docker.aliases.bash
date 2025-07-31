@@ -3,11 +3,13 @@
 ####################################
 
 DOCKERCMD="docker"
-DOCKERCOMPOSECMD="docker-compose"
+DOCKERCOMPOSECMD="docker compose"
 
 ####################################
 #  Docker
 ####################################
+
+alias docker-et="$DOCKERCMD run --rm -it -v '/Users/adam/.ssh:/root/.ssh' et-client"
 
 # Make docker shorter
 alias d="$DOCKERCMD"
