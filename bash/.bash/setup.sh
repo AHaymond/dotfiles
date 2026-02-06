@@ -12,6 +12,9 @@ if [ $(uname -s) = "Darwin" ]; then
   export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo
 fi
 
+# include ~/.local/bin in PATH
+export PATH="$PATH:$HOME/.local/bin"
+
 # add dotfiles bin
 export PATH="$PATH:$BASHFILES/bin"
 

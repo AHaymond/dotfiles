@@ -9,9 +9,9 @@ function start_agent {
   #/usr/bin/ssh-add;
 }
 
+echo "Starting SSH agent"
 
-if [ "$(uname)" == "Darwin" ]; then
-  echo "Starting SSH agent"
+#if [ "$(uname)" == "Darwin" ]; then
   if [ -f "${SSH_ENV}" ]; then
     . "${SSH_ENV}" > /dev/null
     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
@@ -20,4 +20,4 @@ if [ "$(uname)" == "Darwin" ]; then
   else
     start_agent;
   fi
-fi
+#fi
