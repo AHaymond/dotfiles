@@ -48,11 +48,11 @@
 [github]
   user = AHaymond
 [url "ssh://git@github.com/"]
-  insteadOf = https://github.com/
-[url "git@bitbucket.org:"]
-  insteadOf = https://bitbucket.org/
+  pushInsteadOf = https://github.com/
+[url "git@github.com:"]
+  pushInsteadOf = https://github.com/
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [pull]
   #rebase = true
 [advice]

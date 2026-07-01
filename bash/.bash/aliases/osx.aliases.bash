@@ -10,9 +10,7 @@ if [[ "$OSTYPE" =~ "darwin" ]]; then
   alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
   alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
 
-  # Hide/show all desktop icons (useful when presenting)
-  alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-  alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-  alias synergy="synergyc -n DanbookAir 192.168.2.7"
+  # log in to devbox via Eternal Terminal client running in docker
+  # https://github.com/MisterTea/EternalTerminal/tree/master/docker
+  alias devbox-connect="docker run --rm -it --name et-client -v '/Users/adam/.ssh:/root/.ssh' -e SSH_AUTH_SOCK=set et-client devbox"
 fi

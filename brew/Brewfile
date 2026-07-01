@@ -33,7 +33,7 @@ brew 'dmg2img'
 brew 'gzip'
 brew 'unzip'
 brew 'wget'
-brew 'docker-machine-driver-parallels'
+#brew 'docker-machine-driver-parallels'
 
 ###############################################################################
 # dotfiles support

@@ -16,7 +16,7 @@ fi
 export PATH="$PATH:$HOME/.local/bin"
 
 # add dotfiles bin
-export PATH="$PATH:$BASHFILES/bin"
+export PATH="$PATH:$BASHFILES/bin:$HOME/.local/bin"
 
 # add user bin if exists
 if [ -d "$HOME/.bin" ]; then
