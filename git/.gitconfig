@@ -1,6 +1,7 @@
 [user]
   name = Adam Haymond
-  email = coastgrd@gmail.com
+  email = AHaymond@users.noreply.github.com
+	signingkey = ~/.ssh/id_rsa.pub
 [core]
   excludesfile = ~/.gitignore
   editor = nvim
@@ -39,7 +40,7 @@
   extendRegexp = true
   lineNumber = true
 [branch]
-  autosetuprebase = always
+  #autosetuprebase = always
 [merge]
   tool = opendiff
 [rerere]
@@ -58,3 +59,7 @@
 	skippedCherryPicks = false
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

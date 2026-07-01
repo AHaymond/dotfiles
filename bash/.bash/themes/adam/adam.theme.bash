@@ -35,9 +35,11 @@ function prompt_command() {
 }
 
 function vaulted_prompt {
-  if [ -n "$VAULTED_ENV" ]; then
-    echo -e "${lt_blue}[ vaulted: $VAULTED_ENV ]${reset_color} "
-  fi
+  if [ -n "$VOP_PROFILE" ]; then
+		echo -e "${lt_blue}[ vop: $VOP_PROFILE ]${reset_color} "
+	elif [ -n "$VAULTED_ENV" ]; then
+		echo -e "${lt_blue}[ vaulted: $VAULTED_ENV ]${reset_color} "
+	fi
 }
 
 PROMPT_COMMAND=prompt_command;
